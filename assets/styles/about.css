@@ -1,7 +1,9 @@
 .about-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 15rem 10rem 0 10rem;
+  margin: 0 auto;
+  width: 75%;
+    /* display: flex; */
+    /* justify-content: space-between; */
+  padding: 10rem 10rem 10rem 10rem;
 }
 
 .about-description {
