@@ -2,12 +2,12 @@ const footer_template = document.createElement("template");
 footer_template.innerHTML = /* html */`
     <footer>
     <div class="footer">
-    <div class="content-2">
-      <section>
-        <div class="content-2-lines">
-          <h2>Services</h2>
-          <div class="content-2-ul-wrapper">
-            <ul>
+      <div class="content-2">
+        <section>
+          <div class="content-2-lines">
+            <h2>Services</h2>
+            <div class="content-2-ul-wrapper">
+              <ul>
               <li>Web development</li>
               <li>Mobile development</li>
               <li>E-commerce</li>
@@ -17,7 +17,7 @@ footer_template.innerHTML = /* html */`
           </div>
         </div>
         <div class="content-2-lines last-child">
-          <h2>Why Businesses Choose Axis of Change</h2>
+          <h2>Why businesses choose Axis of Change</h2>
           <div class="content-2-ul-wrapper">
             <ul>
               <li>Reliability</li>
@@ -31,11 +31,8 @@ footer_template.innerHTML = /* html */`
             </ul>
           </div>
         </div>
-      </section>
-    </div>
 
-
-      <div class="connect-with-us">
+        <div class="connect-with-us">
         <h2>Connect with Us</h2>
         <div class="social-media">
         <a href="https://www.linkedin.com/in/er-contreras/" target="_blank" class="fa fa-linkedin">
@@ -101,6 +98,9 @@ footer_template.innerHTML = /* html */`
         </a>
       </div>
       </div>
+      </section>
+    </div>
+
       </div>
 
       <div class="rights-reserved">

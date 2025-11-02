@@ -176,7 +176,7 @@ menu-wrapper ul li {
 
 /* Divisor */
 .divisor {
-  height: 2rem;
+  height: 1rem;
   margin: 0 auto;
   background-color: #1e454921;
 }
@@ -201,7 +201,6 @@ menu-wrapper ul li {
 .content-2-lines {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 6rem;
   padding-bottom: 6rem;
   padding-left: 1rem;
@@ -226,12 +225,23 @@ menu-wrapper ul li {
   width: 70%;
 }
 
+.content-2-ul-wrapper li {
+  list-style-type: none;
+}
+
 /* Here starts footer */
 .connect-with-us {
   display: flex;
   flex-direction: column;
-  align-self: center;
   text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  padding-left: 1rem;
+}
+
+.connect-with-us h2 {
+  font-size: 2.5rem;
+  width: 90%;
 }
 
 .social-media {
