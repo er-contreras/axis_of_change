@@ -61,7 +61,7 @@ menu-wrapper ul li {
 
 .popup-menu-options a {
   text-decoration: none; 
-  color: black;
+  color: white;
 }
 
 .header_header {
@@ -275,15 +275,14 @@ menu-wrapper ul li {
     font-size: 3rem;
     display: flex;
     justify-content: space-between;
-    width: 90rem;
     align-items: center;
     margin: 0 auto;
-    padding: 8rem 4rem 2rem 4rem;
-    background-color: black;
+    padding: 2rem 4rem;
+    background-color: #8bb5bb69;
   }
 
   .hidden_header a {
-    color: white;
+    color: black;
     text-decoration: none;
   }
   

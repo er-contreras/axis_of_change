@@ -34,7 +34,7 @@ header_template.innerHTML = /* html */`
 
   <header class="hidden_header">
     <div class="hidden_header_left">
-      <a href="index.html"><span style="font-weight: bolder; color: #white;">ERICK<br>CONTRERAS</span></a>
+      <a href="index.html"><span style="font-weight: bolder; color: #white;">AXIS<br>OF<br>CHANGE</span></a>
     </div>
 
     <div onClick="openPopup()" class="header_button">
