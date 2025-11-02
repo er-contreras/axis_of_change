@@ -278,7 +278,7 @@ menu-wrapper ul li {
     align-items: center;
     margin: 0 auto;
     padding: 2rem 4rem;
-    background-color: #8bb5bb69;
+    background-color: #1b7b8914;
   }
 
   .hidden_header a {
@@ -331,16 +331,20 @@ menu-wrapper ul li {
     line-height: 5rem;
   }
 
-  .divisor {
-    width: 90%;
-  }
-  
   .content-2 {
     width: 90%
   }
 
   footer {
-    padding-top: 15rem;
+    padding-top: 10rem;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer h2 {
+    font-size: 3rem;
   }
   
   .linkedin-icon {
@@ -364,13 +368,17 @@ menu-wrapper ul li {
     display: block;
   }
 
+  .content-2-lines {
+    padding-bottom: 0;
+  }
+
   .content-2-lines h2 {
     font-size: 4rem;
   }
 
   .content-2-lines ul {
     font-size: 3rem;
-    padding-top: 11rem;
+    padding-top: 5rem;
   }
 
   .content-2-lines ul li {
@@ -380,6 +388,11 @@ menu-wrapper ul li {
 
   .content-2-ul-wrapper {
     width: 85%;
+  }
+
+  .connect-with-us {
+    width: 100%;
+    padding-top: 10rem;
   }
 }
 
