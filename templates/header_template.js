@@ -11,10 +11,8 @@ header_template.innerHTML = /* html */`
               <a href="index.html">
                 <li>Home</li>
               </a>
-              <li>Products</li>
               <a href="prices.html"><li>Prices</li></a>
               <a href="about.html"><li>About</li></a>
-              <li>Blog</li>
             </ul>
           </div>
         </nav>
