@@ -1,7 +1,43 @@
 const footer_template = document.createElement("template");
 footer_template.innerHTML = /* html */`
     <footer>
-      <div class="social-media">
+    <div class="footer">
+    <div class="content-2">
+      <section>
+        <div class="content-2-lines">
+          <h2>Services</h2>
+          <div class="content-2-ul-wrapper">
+            <ul>
+              <li>Web development</li>
+              <li>Mobile development</li>
+              <li>E-commerce</li>
+              <li>CMS</li>
+              <li>CRM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="content-2-lines last-child">
+          <h2>Why Businesses Choose Axis of Change</h2>
+          <div class="content-2-ul-wrapper">
+            <ul>
+              <li>Reliability</li>
+              <li>Scalability</li>
+              <li>Integration</li>
+              <li>Security</li>
+              <li>Cost-effective</li>
+              <li>Business automation</li>
+              <li>Integrable with other systems</li>
+              <li>Maintainable for greater longevity</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+      <div class="connect-with-us">
+        <h2>Connect with Us</h2>
+        <div class="social-media">
         <a href="https://www.linkedin.com/in/er-contreras/" target="_blank" class="fa fa-linkedin">
           <svg class="linkedin-icon" fill="#8c8c8c" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"
             stroke="#8c8c8c">
@@ -64,13 +100,27 @@ footer_template.innerHTML = /* html */`
           </svg>
         </a>
       </div>
+      </div>
+      </div>
 
       <div class="rights-reserved">
-        <p>Copyright © 2024 Erick Contreras | All Rights Reserved</p>
+        <p class="fcopyright">
+          <a>Privacy Policy</a>
+            |
+          <a>Legal Policy</a>
+            |
+          <a>Careers</a>
+            |
+          <a>Sitemap</a>
+            |
+          <a>Referral</a>
+            |
+          <a>Contact Us</a>
+        </p>
+        <p>Copyright © 2024 Axis of Change | All Rights Reserved</p>
       </div>
     </footer>`;
 
-// Logica JavaScript del componente
 class FooterWrapper extends HTMLElement {
   connectedCallback() {
     const html = footer_template.content.cloneNode(true);
