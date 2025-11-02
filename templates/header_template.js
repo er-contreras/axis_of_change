@@ -25,7 +25,7 @@ header_template.innerHTML = /* html */`
       <a href="contact.html"><span>Contact</span></a>
       <a href="https://calendly.com/er-contreras" target="_blank">
         <span style="display: flex; gap: 1rem;">
-          <img style="width: 2rem;" src="./assets/dial-telephone-50.png">
+          <img style="width: 2rem;" src="./assets/phone.png">
           BOOK A FREE CONSULTATION
         </span>
       </a>

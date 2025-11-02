@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
 }
 
 .header_header,
@@ -61,16 +61,16 @@ menu-wrapper ul li {
 
 .popup-menu-options a {
   text-decoration: none; 
-  color: white;
+  color: black;
 }
 
 .header_header {
-  background-color: black;
   justify-content: space-between;
   height: 10rem;
   align-items: center;
   font-size: 1.5rem;
   padding: 0 4rem;
+  background-color: #1e454921;
 }
 
 .header_left {
@@ -79,7 +79,7 @@ menu-wrapper ul li {
 }
 
 .header_left a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
@@ -91,7 +91,7 @@ menu-wrapper ul li {
 
 .header_main a {
   cursor: pointer;
-  color: white;
+  color: black;
   text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ menu-wrapper ul li {
 }
 
 .header_main a span:hover {
-  background-color: #3b3b3b;
+  background-color: #dddddd;
 }
 
 .navigation-menu {
@@ -126,19 +126,16 @@ menu-wrapper ul li {
 
 .content-wrapper {
   justify-content: center;
-  padding-top: 10rem;
   min-height: 80rem;
 }
 
 .main_main {
   position: relative;
   min-height: 70rem;
-  width: 80%;
-  border: 0.1px solid #2f2f2f;
 }
 
 .content-bg {
-  background: repeating-linear-gradient(0deg, #05c4ff, black 1px, #fff0 0.2rem, #fff0 0.7rem);
+  background: repeating-linear-gradient(0deg, #05c4ff, #8b8b8b 1px, #fff0 0.2rem, #fff0 0.7rem);
   --mask: linear-gradient(0deg,#000 0%,rgba(0,0,0,.3) 60%,transparent);
   -webkit-mask-image: var(--mask);
   height: 100%;
@@ -158,7 +155,7 @@ menu-wrapper ul li {
 
 .content h1 {
   font-size: 4rem;
-  color: #e3e3e3;
+  color: #5b5b5b;
 }
 
 .content p {
@@ -179,12 +176,9 @@ menu-wrapper ul li {
 
 /* Divisor */
 .divisor {
-  width: 80%;
   height: 2rem;
-  border-right: 1px solid #2f2f2f;
   margin: 0 auto;
-  border-left: 1px solid #2f2f2f;
-  border-bottom: 1px solid #2f2f2f;
+  background-color: #1e454921;
 }
 
 /* Content 2 */
@@ -272,7 +266,7 @@ footer {
   text-align: center;
   font-size: 1.4rem;
   color: black;
-  background-color: #fff;
+  background-color: #1e454921;
 }
 
 /* Media queries */
