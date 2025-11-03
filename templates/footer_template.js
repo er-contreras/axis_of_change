@@ -17,7 +17,7 @@ footer_template.innerHTML = /* html */`
           </div>
         </div>
         <div class="content-2-lines last-child">
-          <h2>Why businesses choose Axis of Change</h2>
+          <h2>Why businesses choose AC</h2>
           <div class="content-2-ul-wrapper">
             <ul>
               <li>Reliability</li>
