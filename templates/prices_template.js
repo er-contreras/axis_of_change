@@ -1,7 +1,7 @@
 const prices_template = document.createElement("template");
 prices_template.innerHTML = /* InnerHTML */`
   <div id="prices" class="prices-h2">
-    <h2>Prices</h2>
+    <h2>Pricing</h2>
     <p>Choose the project that best suits your needs.</p>
   </div>
 
@@ -42,12 +42,21 @@ prices_template.innerHTML = /* InnerHTML */`
                 </svg>
                 <li>Contact Form</li>
               </div>
+
+              <div class="checks">
+                <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                  enable-background="new 0 0 24 24">
+                  <path
+                    d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5l-3.1-3.1c0,0,0,0,0,0c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2C19.1,8.2,19.1,7.6,18.7,7.2z" />
+                </svg>
+                <li>3 Sections</li>
+              </div>
             </ul>
           </div>
         </div>
 
         <a class="anchor-btn" href="index.html#contact">
-          <div class="contract-btn" style="background-color: #ffcf3f;">Hire</div>
+          <div class="contract-btn" style="background-color: #ffcf3f;">Book a demo</div>
         </a>
       </div>
 
@@ -100,14 +109,14 @@ prices_template.innerHTML = /* InnerHTML */`
         </div>
 
         <a class="anchor-btn" href="index.html#contact">
-          <div class="contract-btn" style="background-color: #a600ff;">Hire</div>
+          <div class="contract-btn" style="background-color: #a600ff;">Book a demo</div>
         </a>
       </div>
 
       <div class="price-container">
         <div>
           <div class="price-header">
-            <h2 style="color: #1e9595;">E-commerce</h2>
+            <h2 style="color: #1e9595;">Web App</h2>
             <p></p>
           </div>
 
@@ -119,7 +128,7 @@ prices_template.innerHTML = /* InnerHTML */`
                   <path
                     d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5l-3.1-3.1c0,0,0,0,0,0c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2C19.1,8.2,19.1,7.6,18.7,7.2z" />
                 </svg>
-                <li>Custom Virtual Store</li>
+                <li>Custom Software</li>
               </div>
 
               <div class="checks">
@@ -128,7 +137,7 @@ prices_template.innerHTML = /* InnerHTML */`
                   <path
                     d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5l-3.1-3.1c0,0,0,0,0,0c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2C19.1,8.2,19.1,7.6,18.7,7.2z" />
                 </svg>
-                <li>Product Catalog</li>
+                <li>Reliability</li>
               </div>
               <div class="checks">
                 <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +145,7 @@ prices_template.innerHTML = /* InnerHTML */`
                   <path
                     d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5l-3.1-3.1c0,0,0,0,0,0c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2C19.1,8.2,19.1,7.6,18.7,7.2z" />
                 </svg>
-                <li>Payment Gateway</li>
+                <li>Security</li>
               </div>
               <div class="checks">
                 <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
@@ -144,14 +153,14 @@ prices_template.innerHTML = /* InnerHTML */`
                   <path
                     d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5l-3.1-3.1c0,0,0,0,0,0c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2C19.1,8.2,19.1,7.6,18.7,7.2z" />
                 </svg>
-                <li>Inventory Management</li>
+                <li>Scalability</li>
               </div>
             </ul>
           </div>
         </div>
 
         <a class="anchor-btn" href="index.html#contact">
-          <div class="contract-btn" style="background-color: #1e9595;">Hire</div>
+          <div class="contract-btn" style="background-color: #1e9595;">Book a demo</div>
         </a>
       </div>
     </section>

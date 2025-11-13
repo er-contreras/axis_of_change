@@ -29,11 +29,12 @@
 .price-header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .price-container h2 {
   font-size: 1.8rem;
+  padding-bottom: 1rem;
 }
 
 .price-container p {
