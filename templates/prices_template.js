@@ -46,7 +46,7 @@ prices_template.innerHTML = /* InnerHTML */`
           </div>
         </div>
 
-        <a class="anchor-btn" href="contact.html">
+        <a class="anchor-btn" href="index.html#contact">
           <div class="contract-btn" style="background-color: #ffcf3f;">Hire</div>
         </a>
       </div>
@@ -99,7 +99,7 @@ prices_template.innerHTML = /* InnerHTML */`
           </div>
         </div>
 
-        <a class="anchor-btn" href="contact.html">
+        <a class="anchor-btn" href="index.html#contact">
           <div class="contract-btn" style="background-color: #a600ff;">Hire</div>
         </a>
       </div>
@@ -150,7 +150,7 @@ prices_template.innerHTML = /* InnerHTML */`
           </div>
         </div>
 
-        <a class="anchor-btn" href="contact.html">
+        <a class="anchor-btn" href="index.html#contact">
           <div class="contract-btn" style="background-color: #1e9595;">Hire</div>
         </a>
       </div>
