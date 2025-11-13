@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Contact</title>
-  <link rel="stylesheet" href="./assets/styles/contact.css">
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <meta charset="UTF-8">
-
-  <script defer src="./templates/header_template.js"></script>
-  <script defer src="./templates/footer_template.js"></script>
-  <script defer src="./templates/menu_template.js"></script>
-  <script defer src="./scripts/menu_button.js"></script>
-</head>
-
-<body>
-  <menu-wrapper></menu-wrapper>
-  <header-wrapper></header-wrapper>
-
-  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+const contact_template = document.createElement("template");
+contact_template.innerHTML = /* InnerHTML */`
+  <form id="contact" action="https://api.web3forms.com/submit" method="POST" id="form">
     <fieldset>
       <legend>Contact Form</legend>
       <input type="hidden" name="access_key" value="9aab968a-d5e1-42f0-8342-37153b22cffa" />
@@ -46,10 +29,13 @@
 
       <button type="submit"> Send Message </button>
     </fieldset>
-  </form>
+  </form>`;
 
-  <div class="divisor"></div>
-
-  <footer-wrapper></footer-wrapper>
-
-</html>
+// JavaScript logic of the component
+class ContactWrapper extends HTMLElement {
+  connectedCallback() {
+    const html = contact_template.content.cloneNode(true);
+    this.append(html);
+  }
+}
+customElements.define("contact-wrapper", ContactWrapper);

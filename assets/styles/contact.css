@@ -1,11 +1,15 @@
 form {
   max-width: 40%;
-  margin: 150px auto;
-  font-size: 1.8rem;
+  margin: 10rem auto;
+  font-size: 2rem;
 }
 
 fieldset {
   padding: 30px;
+}
+
+fieldset legend {
+  font-size: 4rem;
 }
 
 input,

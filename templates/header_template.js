@@ -13,6 +13,7 @@ header_template.innerHTML = /* html */`
               </a>
               <a href="index.html#prices"><li>Prices</li></a>
               <a href="index.html#about"><li>About</li></a>
+              <a href="index.html#contact"><li>Contact</li></a>
             </ul>
           </div>
         </nav>
