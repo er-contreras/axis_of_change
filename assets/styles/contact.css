@@ -36,11 +36,11 @@ button {
 
   input, textarea {
     padding: 1.5rem;
-    font-size: 7rem;
+    font-size: 3rem;
   }
 
   input::placeholder, textarea::placeholder {
-    font-size: 5rem;
+    font-size: 3rem;
   }
 
   button {
