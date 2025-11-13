@@ -63,7 +63,7 @@ prices_template.innerHTML = /* InnerHTML */`
       <div class="price-container">
         <div>
           <div class="price-header">
-            <h2 style="color: #a600ff;">Complete Website</h2>
+            <h2 style="color: #a600ff;">Website</h2>
             <p></p>
           </div>
 
@@ -109,14 +109,14 @@ prices_template.innerHTML = /* InnerHTML */`
         </div>
 
         <a class="anchor-btn" href="index.html#contact">
-          <div class="contract-btn" style="background-color: #a600ff;">Book a demo</div>
+          <div class="contract-btn" style="background-color: #a600ff;">Contact Us</div>
         </a>
       </div>
 
       <div class="price-container">
         <div>
           <div class="price-header">
-            <h2 style="color: #1e9595;">Web App</h2>
+            <h2 style="color: #1e9595;">Custom Application</h2>
             <p></p>
           </div>
 
@@ -160,7 +160,7 @@ prices_template.innerHTML = /* InnerHTML */`
         </div>
 
         <a class="anchor-btn" href="index.html#contact">
-          <div class="contract-btn" style="background-color: #1e9595;">Book a demo</div>
+          <div class="contract-btn" style="background-color: #1e9595;">Book a consultation</div>
         </a>
       </div>
     </section>
