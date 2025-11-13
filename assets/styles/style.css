@@ -135,7 +135,7 @@ menu-wrapper ul li {
 }
 
 .content-bg {
-  background: repeating-linear-gradient(0deg, #05c4ff, #8b8b8b 1px, #fff0 0.2rem, #fff0 0.7rem);
+  background: repeating-linear-gradient(288deg, #05c4ff, #8b8b8b 1px, #fff0 0.2rem, #fff0 0.7rem);
   --mask: linear-gradient(0deg,#000 0%,rgba(0,0,0,.3) 60%,transparent);
   -webkit-mask-image: var(--mask);
   height: 100%;
@@ -317,8 +317,7 @@ menu-wrapper ul li {
   }
 
   .main_main {
-    width: 90%;
-    min-height: 90rem;
+    min-height: 100rem;
   }
   
   .under-construction {
@@ -327,7 +326,6 @@ menu-wrapper ul li {
   }
 
   .content-wrapper {
-    padding-top: 10rem;
   }
 
   .content h1 {
@@ -371,7 +369,6 @@ menu-wrapper ul li {
   }
   
   .content-bg {
-    background: unset;
   }
 
   .content-2 section {
