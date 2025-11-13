@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <title>Prices</title>
-  <link rel="stylesheet" href="./assets/styles/style.css">
-  <link rel="stylesheet" href="./assets/styles/prices.css">
-  <meta charset="UTF-8">
-
-  <script defer src="./templates/header_template.js"></script>
-  <script defer src="./templates/footer_template.js"></script>
-  <script defer src="./templates/menu_template.js"></script>
-  <script defer src="./scripts/menu_button.js"></script>
-</head>
-
-<body>
-  <menu-wrapper></menu-wrapper>
-  <header-wrapper></header-wrapper>
-
-  <div class="prices-h2">
+const prices_template = document.createElement("template");
+prices_template.innerHTML = /* InnerHTML */`
+  <div id="prices" class="prices-h2">
     <h2>Prices</h2>
     <p>Choose the project that best suits your needs.</p>
   </div>
@@ -172,11 +155,13 @@
         </a>
       </div>
     </section>
-  </div>
+  </div>`;
 
-  <div class="divisor"></div>
-
-  <footer-wrapper></footer-wrapper>
-</body>
-
-</html>
+// JavaScript logic of the component
+class PricesWrapper extends HTMLElement {
+  connectedCallback() {
+    const html = prices_template.content.cloneNode(true);
+    this.append(html);
+  }
+}
+customElements.define("prices-wrapper", PricesWrapper);
