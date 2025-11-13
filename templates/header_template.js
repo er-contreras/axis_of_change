@@ -12,7 +12,7 @@ header_template.innerHTML = /* html */`
                 <li>Home</li>
               </a>
               <a href="index.html#prices"><li>Prices</li></a>
-              <a href="about.html"><li>About</li></a>
+              <a href="index.html#about"><li>About</li></a>
             </ul>
           </div>
         </nav>
