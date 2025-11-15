@@ -6,8 +6,7 @@ about_template.innerHTML = /* InnerHTML */`
       <p>
         I started Axis of Change to help small businesses grow through meaningful design. Every project is built from
         scratch thoughtful, fast, and personal. My goal is simple: make your website reflect who you are, and help
-        your
-        clients find you with ease.
+        your clients find you with ease.
       </p>
     </div>
   </div>`;
