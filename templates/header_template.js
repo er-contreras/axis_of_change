@@ -13,7 +13,6 @@ header_template.innerHTML = /* html */`
               </a>
               <a href="index.html#prices"><li>Pricing</li></a>
               <a href="index.html#about"><li>About</li></a>
-              <a href="index.html#contact"><li>Contact</li></a>
             </ul>
           </div>
         </nav>
@@ -21,7 +20,7 @@ header_template.innerHTML = /* html */`
     </div>
 
     <div class="header_main">
-      <a href="contact.html"><span>Contact</span></a>
+      <a href="index.html#contact"><span>Contact</span></a>
       <a href="https://calendly.com/er-contreras" target="_blank">
         <span style="display: flex; gap: 1rem;">
           <img style="width: 2rem;" src="./assets/phone.png">
