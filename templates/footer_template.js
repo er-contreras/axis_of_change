@@ -11,8 +11,8 @@ footer_template.innerHTML = /* html */`
               <li>Web development</li>
               <li>Mobile development</li>
               <li>E-commerce</li>
-              <li>CMS</li>
-              <li>CRM</li>
+              <li>CMS / CRM</li>
+              <li>Business automation</li>
             </ul>
           </div>
         </div>
@@ -20,14 +20,11 @@ footer_template.innerHTML = /* html */`
           <h2>Why businesses choose AC</h2>
           <div class="content-2-ul-wrapper">
             <ul>
-              <li>Reliability</li>
-              <li>Scalability</li>
-              <li>Integration</li>
-              <li>Security</li>
+              <li>Reliable & scalable</li>
+              <li>Secure by design</li>
               <li>Cost-effective</li>
-              <li>Business automation</li>
-              <li>Integrable with other systems</li>
-              <li>Maintainable for greater longevity</li>
+              <li>Integrations that grow with you</li>
+              <li>Long-term maintainability</li>
             </ul>
           </div>
         </div>
