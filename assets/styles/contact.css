@@ -1,3 +1,11 @@
+form h2 {
+  font-size: 3rem;
+}
+
+form p {
+  font-size: 2rem;
+}
+
 .contact-form {
   max-width: 500px;
   margin: 0 auto;
@@ -13,10 +21,14 @@
   gap: 6px;
 }
 
+.form-group label {
+  font-size: 2rem;
+}
+
 input,
 textarea {
   padding: 12px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   border-radius: 8px;
   border: 1px solid #ccc;
   background: #fff;
@@ -24,7 +36,7 @@ textarea {
 
 .submit-button {
   padding: 14px;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   border: none;
   border-radius: 10px;
@@ -40,31 +52,34 @@ textarea {
 @media (max-width: 1000px) {
   .contact-form {
     max-width: 90%;
-    padding: 10px;
-    gap: 16px;
   }
 
-  h2 {
-    font-size: 1.6rem;
+  form h2 {
+    font-size: 7rem;
     text-align: center;
+  }
+
+  .form-group label {
+    font-size: 5rem;
   }
 
   .form-subtitle {
-    font-size: 0.9rem;
+    font-size: 5rem;
     text-align: center;
     line-height: 1.4;
+    padding-bottom: 7rem;
   }
 
   input,
   textarea {
-    font-size: 1rem;   /* keeps readability */
+    font-size: 3.5rem;
     padding: 10px;
   }
 
   .submit-button {
     width: 100%;
-    padding: 14px;
-    font-size: 1.1rem;
+    padding: 2rem;
+    font-size: 4rem;
   }
 }
 

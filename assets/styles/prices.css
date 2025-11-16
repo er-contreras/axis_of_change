@@ -10,6 +10,10 @@
   padding: 10rem 0 1rem 0;
 }
 
+.prices-h2 h2 {
+  font-size: 4rem;
+}
+
 .prices-h2 p {
   font-size: 3rem; 
 }
@@ -75,6 +79,11 @@
 }
 
 @media (max-width: 1000px) {
+  .prices-h2 h2 {
+    font-size: 6rem;
+    padding-bottom: 2rem;
+  }
+
   .prices-section {
     flex-direction: column;
     align-items: center;
@@ -100,8 +109,8 @@
 
   .contract-btn {
     min-width: 70%;
-    font-size: 7rem;
-    margin: 0 auto;
+    font-size: 5rem;
+    margin: 7rem auto 2rem;
     background-color: #ffcf3f;
     border-radius: 2rem;
   }
