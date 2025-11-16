@@ -10,12 +10,10 @@ index_template.innerHTML = /* html */`
          <section>
            <div class="content">
              <h1>
-               Need a clean, professional page for your business? I’ll make one that fits your style and budget.
+               I create custom websites and applications built to increase trust, boost sales, and move your business forward.
              </h1>
              <p>
-               Expert in web development.
-               <br>
-               Help your business grow.
+               Practical, secure, and built for growth.
              </p>
            </div>
          </section>
