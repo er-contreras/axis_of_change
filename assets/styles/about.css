@@ -1,8 +1,12 @@
+.about-wrapper {
+  background-color: #e7ecff;
+}
+
 .about-section {
-  margin: 0 auto;
-  width: 75%;
   padding: 15rem 0;
   text-align: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .about-section h2 {

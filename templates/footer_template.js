@@ -114,15 +114,21 @@ footer_template.innerHTML = /* html */`
             |
           <a>Contact Us</a>
         </p>
-        <p>Copyright © 2024 Axis of Change | All Rights Reserved</p>
+
+        <p>&copy; <span class="year">2024</span> Axis of Change | Building reliable digital experience | All Rights Reserved</p>
       </div>
     </footer>`;
 
 class FooterWrapper extends HTMLElement {
   connectedCallback() {
     const html = footer_template.content.cloneNode(true);
+    const year = new Date().getFullYear();
+
     this.append(html);
+    this.querySelector(".year").textContent = year;
   }
 }
+
+
 
 customElements.define("footer-wrapper", FooterWrapper);

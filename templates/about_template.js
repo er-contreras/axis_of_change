@@ -1,5 +1,6 @@
 const about_template = document.createElement("template");
 about_template.innerHTML = /* InnerHTML */`
+  <div class="about-wrapper">
   <div id="about" class="about-section">
     <h2>About</h2>
     <div class="about-description">
@@ -16,6 +17,7 @@ about_template.innerHTML = /* InnerHTML */`
         business results, not just pretty pages.
       </p>
     </div>
+  </div>
   </div>`;
 
 // JavaScript logic of the component
