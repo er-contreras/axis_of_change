@@ -1,37 +1,38 @@
 const contact_template = document.createElement("template");
 contact_template.innerHTML = /* InnerHTML */`
-  <form id="contact" action="https://api.web3forms.com/submit" method="POST" id="form">
-    <fieldset>
-      <legend>Contact Form</legend>
-      <input type="hidden" name="access_key" value="9aab968a-d5e1-42f0-8342-37153b22cffa" />
-      <input type="hidden" name="subject" value="New Submission from Web3Forms" />
-      <input type="hidden" name="redirect" value="https://web3forms.com/success" />
-      <input type="checkbox" name="botcheck" id="" style="display: none;" />
-      <div>
-        <label for="name">Full Name</label><br>
-        <input type="text" name="name" id="name" placeholder="John Doe" required />
-        <br><br>
-      </div>
-      <div>
-        <label for="email">Email Address</label><br>
-        <input type="email" name="email" id="email" placeholder="you@company.com" required /><br><br>
-      </div>
-      <div>
-        <label for="phone">Phone Number</label>
-        <br>
-        <input type="text" name="phone" id="phone" placeholder="+52 (442) 1234-567" required /><br><br>
-      </div>
-      <div>
-        <label for="message">Your Message</label>
-        <br>
-        <textarea rows="5" name="message" id="message" placeholder="Your Message..." required></textarea><br><br>
-      </div>
+  <form id="contact" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+    <input type="hidden" name="access_key" value="9aab968a-d5e1-42f0-8342-37153b22cffa" />
+    <input type="hidden" name="subject" value="New Submission from Website" />
+    <input type="hidden" name="redirect" value="https://web3forms.com/success" />
+    <input type="checkbox" name="botcheck" style="display: none;" />
 
-      <button type="submit"> Send Message </button>
-    </fieldset>
-  </form>`;
+    <h2>Get in touch</h2>
+    <p class="form-subtitle">Tell me about your project, and I’ll get back to you within 24 hours.</p>
 
-// JavaScript logic of the component
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" name="name" id="name" placeholder="John Doe" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address *</label>
+      <input type="email" name="email" id="email" placeholder="you@company.com" required />
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number *</label>
+      <input type="tel" name="phone" id="phone" placeholder="+52 (442) 123 4567" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Your Message *</label>
+      <textarea name="message" id="message" rows="5" placeholder="Your message..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit-button">Send Message</button>
+  </form>
+`;
+
 class ContactWrapper extends HTMLElement {
   connectedCallback() {
     const html = contact_template.content.cloneNode(true);
@@ -39,3 +40,4 @@ class ContactWrapper extends HTMLElement {
   }
 }
 customElements.define("contact-wrapper", ContactWrapper);
+
