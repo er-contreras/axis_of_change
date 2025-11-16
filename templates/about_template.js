@@ -4,9 +4,16 @@ about_template.innerHTML = /* InnerHTML */`
     <h2>About</h2>
     <div class="about-description">
       <p>
-        I started Axis of Change to help small businesses grow through meaningful design. Every project is built from
-        scratch thoughtful, fast, and personal. My goal is simple: make your website reflect who you are, and help
-        your clients find you with ease.
+        Axis of Change exists to help businesses grow with clean, fast, and
+        purpose-built web applications. I build every project from scratch using
+        modern web technologies, no templates, no shortcuts so your business
+        gets a website that is reliable, scalable, and truly yours.
+      </p>
+      <br>
+      <p>
+        With experience in Ruby on Rails, JavaScript, UI design, and technical
+        SEO, I focus on one thing: delivering web solutions that generate real
+        business results, not just pretty pages.
       </p>
     </div>
   </div>`;
