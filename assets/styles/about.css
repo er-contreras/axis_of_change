@@ -1,5 +1,5 @@
 .about-wrapper {
-  background-color: #e7ecff;
+  background-color: #1e454921;
 }
 
 .about-section {
@@ -37,6 +37,5 @@
   .about-description {
     max-width: 100%;
     padding-bottom: 10rem;
-    font-size: 2rem;
   }
 }

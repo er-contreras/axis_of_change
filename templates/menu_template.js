@@ -10,8 +10,8 @@ menu_template.innerHTML = /* InnerHTML */`
         <a href="index.html"><li>Home</li></a>
         <a href="index.html#prices"><li>Pricing</li></a>
         <a href="index.html#about"><li>About</li></a>
-        <a href="index.html#contact"><li style="color: #c5c10f";>Contact</li></a>
-        <a href="https://calendly.com/er-contreras"><li style="color: #00e5ff";>Free Consultation</li></a>
+        <a href="index.html#contact"><li style="color: #c5650f";>Contact</li></a>
+        <a href="https://calendly.com/er-contreras"><li style="color: #198755";>Free Consultation</li></a>
       </ul>
     </div>
   </div>
