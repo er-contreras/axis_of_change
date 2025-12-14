@@ -90,7 +90,6 @@ class FooterWrapper extends HTMLElement {
       { name: "LinkedIn", href: "https://www.linkedin.com/in/er-contreras/", icon: "linkedin" },
       { name: "Twitter",  href: "https://twitter.com/er_contreras_", icon: "twitter" },
       { name: "GitHub",   href: "https://github.com/er-contreras", icon: "github" },
-      { name: "Facebook", href: "https://www.facebook.com/profile.php?id=100074601182991", icon: "facebook" }
     ];
 
     const container = this.querySelector(".social-media");

@@ -1,0 +1,25 @@
+{
+  "name": "axis_of_change",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "esbuild src/main.js --bundle --format=iife --target=es2018 --outfile=dist/app.js",
+    "watch": "esbuild src/main.js --bundle --format=iife --target=es2018 --outfile=dist/app.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/er-contreras/axis_of_change.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/er-contreras/axis_of_change/issues"
+  },
+  "homepage": "https://github.com/er-contreras/axis_of_change#readme",
+  "devDependencies": {
+    "esbuild": "^0.27.1"
+  }
+}
