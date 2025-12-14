@@ -10,22 +10,22 @@ contact_template.innerHTML = /* InnerHTML */`
     <p class="form-subtitle">Tell me about your project, and I’ll get back to you within 24 hours.</p>
 
     <div class="form-group">
-      <label for="name">Full Name *</label>
+      <label for="name">Full Name <span style="color: red">*</span></label>
       <input type="text" name="name" id="name" placeholder="John Doe" required />
     </div>
 
     <div class="form-group">
-      <label for="email">Email Address *</label>
+      <label for="email">Email Address <span style="color: red">*</span></label>
       <input type="email" name="email" id="email" placeholder="you@company.com" required />
     </div>
 
     <div class="form-group">
-      <label for="phone">Phone Number *</label>
+      <label for="phone">Phone Number <span style="color: red">*</span></label>
       <input type="tel" name="phone" id="phone" placeholder="+52 (442) 123 4567" required />
     </div>
 
     <div class="form-group">
-      <label for="message">Your Message *</label>
+      <label for="message">Your Message <span style="color: red">*</span></label>
       <textarea name="message" id="message" rows="5" placeholder="Your message..." required></textarea>
     </div>
 
