@@ -21,27 +21,37 @@ index_template.innerHTML = /* html */`
 
        <div class="svg">
          <svg width="200" height="180" xmlns="http://www.w3.org/2000/svg">
-           <rect x="30" y="30" height="110" width="110" style="fill: #585858bf;" rx="5">
+           <rect x="30" y="30" height="110" width="110" style="fill: #bc0000;" rx="5">
              <animateTransform attributeName="transform" begin="0s" dur="10s" type="rotate" from="0 85 85"
                to="360 85 85" repeatCount="indefinite" />
            </rect>
 
-           <rect x="30" y="30" height="110" width="110" style="fill: #2a83a5a6;" rx="5">
+           <rect x="30" y="30" height="110" width="110" style="fill: #00690e;" rx="5">
              <animateTransform attributeName="transform" begin="0.5s" dur="10s" type="rotate" from="0 85 85"
                to="360 85 85" repeatCount="indefinite" />
            </rect>
 
-           <rect x="30" y="30" height="110" width="110" style="fill: #6a6a6abf;" rx="5">
+           <rect x="30" y="30" height="110" width="110" style="fill: #bc0000;" rx="5">
+             <animateTransform attributeName="transform" begin="0s" dur="10s" type="rotate" from="0 85 85"
+               to="360 85 85" repeatCount="indefinite" />
+           </rect>
+
+           <rect x="30" y="30" height="110" width="110" style="fill: #00690e;" rx="5">
+             <animateTransform attributeName="transform" begin="0.5s" dur="10s" type="rotate" from="0 85 85"
+               to="360 85 85" repeatCount="indefinite" />
+           </rect>
+
+           <rect x="30" y="30" height="110" width="110" style="fill: #00690e;" rx="5">
              <animateTransform attributeName="transform" begin="1s" dur="10s" type="rotate" from="0 85 85"
                to="360 85 85" repeatCount="indefinite" />
            </rect>
 
-           <rect x="30" y="30" height="110" width="110" style="fill: #7a6c9bcf" rx="5">
+           <rect x="30" y="30" height="110" width="110" style="fill: #bc0000" rx="5">
              <animatetransform attributename="transform" begin="1.5s" dur="10s" type="rotate" from="0 85 85"
                to="360 85 85" repeatcount="indefinite" />
            </rect>
 
-           <rect x="30" y="30" height="110" width="110" style="fill: #999999d1" rx="5">
+           <rect x="30" y="30" height="110" width="110" style="fill: #006703" rx="5">
              <animatetransform attributename="transform" begin="2s" dur="10s" type="rotate" from="0 85 85"
                to="360 85 85" repeatcount="indefinite" />
            </rect>
