@@ -28,7 +28,7 @@ class MainWrapper extends HTMLElement {
       { color: "#00690e", delay: 0.5 },
       { color: "#bc0000", delay: 1 },
       { color: "#00690e", delay: 1.5 },
-      { color: "#00690e", delay: 2 },
+      { color: "#616166", delay: 2 },
       { color: "#ffffff", delay: 2.5, radius: 100 },
     ];
 
