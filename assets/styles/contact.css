@@ -25,6 +25,10 @@ form p {
   font-size: 2rem;
 }
 
+.require {
+  color: red;
+}
+
 input,
 textarea {
   padding: 12px;
