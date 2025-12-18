@@ -86,8 +86,8 @@ menu-wrapper ul li {
 }
 
 .header_left a {
-  color: #000;
   text-decoration: none;
+  color: black;
 }
 
 .header_main {
@@ -298,7 +298,6 @@ menu-wrapper ul li {
     padding: 2rem 4rem;
     background-color: #1b7b8914;
     backdrop-filter: blur(6px);
-
   }
 
   .hidden_header a {
@@ -333,9 +332,6 @@ menu-wrapper ul li {
   .under-construction {
     top: 10rem;
     font-size: 4.5rem;
-  }
-
-  .content-wrapper {
   }
 
   .content h1 {
@@ -378,9 +374,6 @@ menu-wrapper ul li {
     width: 9rem;
   }
   
-  .content-bg {
-  }
-
   .content-2 section {
     display: block;
   }
