@@ -20,7 +20,6 @@ about_template.innerHTML = /* InnerHTML */`
     </div>
   </div>`;
 
-// JavaScript logic of the component
 class AboutWrapper extends HTMLElement {
   connectedCallback() {
     const html = about_template.content.cloneNode(true);

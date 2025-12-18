@@ -5,15 +5,14 @@
   `
   <header class="header_header">
     <div class="header_left">
-      <a href="index.html"><span style="font-weight: bolder; color: #white;">Axis of<br>Change</span></a>
-
+      <a href="index.html#">
+        <span style="font-weight: bolder;">Axis of<br>Change</span>
+      </a>
       <div>
         <nav>
           <div>
             <ul class="navigation-menu">
-              <a href="index.html">
-                <li>Home</li>
-              </a>
+              <a href="index.html#"><li>Home</li></a>
               <a href="index.html#prices"><li>Pricing</li></a>
               <a href="index.html#about"><li>About</li></a>
             </ul>
@@ -35,10 +34,10 @@
 
   <header class="hidden_header">
     <div class="hidden_header_left">
-      <a href="index.html"><span style="font-weight: bolder; color: #white;">AXIS<br>OF<br>CHANGE</span></a>
+      <a href="index.html#"><span style="font-weight: bolder;">AXIS<br>OF<br>CHANGE</span></a>
     </div>
 
-    <div onClick="openPopup()" class="header_button">
+    <div class="header_button menu-button">
       <div class="lines"></div>
       <div class="lines"></div>
     </div>
@@ -460,14 +459,15 @@
   <div class="popup-menu">
     <div class="top-popup-menu">
       <h2>Menu</h2>
-      <h3 onClick="closePopup()">X</h3>
+      <h3 class="close-btn">X</h3>
     </div>
+
     <div class="popup-menu-options">
       <ul>
-        <a href="index.html"><li>Home</li></a>
-        <a href="index.html#prices"><li>Pricing</li></a>
-        <a href="index.html#about"><li>About</li></a>
-        <a href="index.html#contact"><li style="color: #c5650f";>Contact</li></a>
+        <a class="link" href="index.html#"><li>Home</li></a>
+        <a class="link" href="index.html#prices"><li>Pricing</li></a>
+        <a class="link" href="index.html#about"><li>About</li></a>
+        <a class="link" href="index.html#contact"><li style="color: #c5650f";>Contact</li></a>
         <a href="https://calendly.com/er-contreras"><li style="color: #198755";>Free Consultation</li></a>
       </ul>
     </div>
@@ -475,8 +475,21 @@
 `;
   var MenuWrapper = class extends HTMLElement {
     connectedCallback() {
-      const html = menu_template.content.cloneNode(true);
-      this.append(html);
+      var _a;
+      this.append(menu_template.content.cloneNode(true));
+      const closeBtn = this.querySelector(".close-btn");
+      (_a = document.querySelector(".menu-button")) == null ? void 0 : _a.addEventListener("click", () => {
+        this.style.display = "block";
+      });
+      closeBtn.addEventListener("click", () => {
+        this.style.display = "none";
+      });
+      const links = this.querySelectorAll(".link");
+      links.forEach((link) => {
+        link.addEventListener("click", () => {
+          this.style.display = "none";
+        });
+      });
     }
   };
   customElements.define("menu-wrapper", MenuWrapper);
