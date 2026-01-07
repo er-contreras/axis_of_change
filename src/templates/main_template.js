@@ -22,42 +22,94 @@ class MainWrapper extends HTMLElement {
 
   renderSVG() {
     const svg = this.querySelector("svg");
+    const centerX = 100;
+    const centerY = 90;
 
+    svg.innerHTML = `
+    <defs>
+      <filter id="metal-gloss" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="0.8" result="blur" />
+        <feSpecularLighting in="blur"
+          surfaceScale="3"
+          specularConstant="0.7"
+          specularExponent="35"
+          lighting-color="#ffffff"
+          result="specOut"
+        >
+        <fePointLight x="-40" y="-40" z="80" />
+        </feSpecularLighting>
+        <feComposite in="specOut" in2="SourceAlpha" operator="in" result="specOut" />
+        <feComposite in="SourceGraphic" in2="specOut" operator="arithmetic" k1="0" k2="1" k3="0.8" k4="0" />
+      </filter>
+
+      <linearGradient id="steel-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#777" />
+        <stop offset="45%" style="stop-color:#333" />
+        <stop offset="55%" style="stop-color:#444" />
+        <stop offset="100%" style="stop-color:#111" />
+      </linearGradient>
+    </defs>
+  `;
+
+    // Geometría ajustada: Dientes más cortos (outerR apenas mayor a innerR)
     const layers = [
-      { color: "#bc0000", delay: 0 },
-      { color: "#00690e", delay: 0.5 },
-      { color: "#bc0000", delay: 1 },
-      { color: "#00690e", delay: 1.5 },
-      { color: "#616166", delay: 2 },
-      { color: "#ffffff", delay: 2.5, radius: 100 },
+      { teeth: 40, innerR: 64, outerR: 72, fill: "url(#steel-dark)", speed: 45, dir: 1 },
+      { teeth: 24, innerR: 48, outerR: 56, fill: "#3d3d40", speed: 30, dir: -1 },
+      { teeth: 15, innerR: 24, outerR: 30, fill: "#222", speed: 20, dir: 1 }
     ];
 
-    layers.forEach(({ color, delay, radius = 5 }) => {
-      const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    layers.forEach(({ teeth, innerR, outerR, fill, speed, dir }) => {
+      const gear = document.createElementNS("http://www.w3.org/2000/svg", "path");
+      // Usamos la nueva lógica de dientes compactos
+      gear.setAttribute("d", this.calculatePrecisionGearPath(centerX, centerY, teeth, innerR, outerR));
+      gear.setAttribute("fill", fill);
+      gear.setAttribute("filter", "url(#metal-gloss)");
+      gear.style.filter = "url(#metal-gloss) drop-shadow(1.5px 1.5px 2px rgba(0,0,0,0.6))";
 
-      rect.setAttribute("x", 30);
-      rect.setAttribute("y", 30);
-      rect.setAttribute("width", 110);
-      rect.setAttribute("height", 110);
-      rect.setAttribute("rx", radius);
-      rect.setAttribute("fill", color);
+      const anim = document.createElementNS("http://www.w3.org/2000/svg", "animateTransform");
+      anim.setAttribute("attributeName", "transform");
+      anim.setAttribute("type", "rotate");
+      anim.setAttribute("from", `${dir === 1 ? 0 : 360} ${centerX} ${centerY}`);
+      anim.setAttribute("to", `${dir === 1 ? 360 : 0} ${centerX} ${centerY}`);
+      anim.setAttribute("dur", `${speed}s`);
+      anim.setAttribute("repeatCount", "indefinite");
 
-      const animate = document.createElementNS(
-        "http://www.w3.org/2000/svg",
-        "animateTransform"
-      );
-
-      animate.setAttribute("attributeName", "transform");
-      animate.setAttribute("type", "rotate");
-      animate.setAttribute("from", "0 85 85");
-      animate.setAttribute("to", "360 85 85");
-      animate.setAttribute("dur", "10s");
-      animate.setAttribute("begin", `${delay}s`);
-      animate.setAttribute("repeatCount", "indefinite");
-
-      rect.appendChild(animate);
-      svg.appendChild(rect);
+      gear.appendChild(anim);
+      svg.appendChild(gear);
     });
+
+    // Eje central tipo rodamiento pulido
+    const core = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    core.setAttribute("cx", centerX); core.setAttribute("cy", centerY); core.setAttribute("r", "12");
+    core.setAttribute("fill", "none"); core.setAttribute("stroke", "gray"); core.setAttribute("stroke-width", "5");
+    svg.appendChild(core);
+  }
+
+  calculatePrecisionGearPath(cx, cy, teeth, innerR, outerR) {
+    let p = [];
+    const step = (Math.PI * 2) / teeth;
+
+    // Diente mucho más ancho y chato para realismo
+    const baseWidth = step * 0.35;
+    const topWidth = step * 0.25;
+
+    for (let i = 0; i < teeth; i++) {
+      const a = i * step;
+
+      // Base inferior izquierda
+      p.push(`${cx + Math.cos(a - baseWidth) * innerR},${cy + Math.sin(a - baseWidth) * innerR}`);
+      // Punta superior izquierda
+      p.push(`${cx + Math.cos(a - topWidth) * outerR},${cy + Math.sin(a - topWidth) * outerR}`);
+      // Punta superior derecha
+      p.push(`${cx + Math.cos(a + topWidth) * outerR},${cy + Math.sin(a + topWidth) * outerR}`);
+      // Base inferior derecha
+      p.push(`${cx + Math.cos(a + baseWidth) * innerR},${cy + Math.sin(a + baseWidth) * innerR}`);
+
+      // Valle plano para que parezca cortado por CNC
+      const valleyAngle = a + step / 2;
+      p.push(`${cx + Math.cos(valleyAngle - baseWidth) * innerR},${cy + Math.sin(valleyAngle - baseWidth) * innerR}`);
+    }
+    return "M" + p.join(" L") + " Z";
   }
 }
 
