@@ -53,9 +53,13 @@ class MainWrapper extends HTMLElement {
 
     // Geometría ajustada: Dientes más cortos (outerR apenas mayor a innerR)
     const layers = [
-      { teeth: 40, innerR: 64, outerR: 72, fill: "url(#steel-dark)", speed: 45, dir: 1 },
-      { teeth: 24, innerR: 48, outerR: 56, fill: "#3d3d40", speed: 30, dir: -1 },
-      { teeth: 15, innerR: 24, outerR: 30, fill: "#222", speed: 20, dir: 1 }
+      { teeth: 27, innerR: 82, outerR: 90, fill: "url(#steel-dark)", speed: 45, dir: 1 },
+      { teeth: 30, innerR: 66, outerR: 66, fill: "white", speed: 45, dir: 1 },
+      { teeth: 24, innerR: 54, outerR: 62, fill: "gray", speed: 30, dir: -1 },
+      { teeth: 16, innerR: 42, outerR: 50, fill: "#B02A2A", speed: 30, dir: -1 },
+      { teeth: 15, innerR: 34, outerR: 34, fill: "white", speed: 20, dir: 1 },
+      { teeth: 15, innerR: 28, outerR: 28, fill: "gray", speed: 20, dir: 1 },
+      { teeth: 15, innerR: 20, outerR: 20, fill: "white", speed: 20, dir: 1 }
     ];
 
     layers.forEach(({ teeth, innerR, outerR, fill, speed, dir }) => {
@@ -81,7 +85,7 @@ class MainWrapper extends HTMLElement {
     // Eje central tipo rodamiento pulido
     const core = document.createElementNS("http://www.w3.org/2000/svg", "circle");
     core.setAttribute("cx", centerX); core.setAttribute("cy", centerY); core.setAttribute("r", "12");
-    core.setAttribute("fill", "none"); core.setAttribute("stroke", "gray"); core.setAttribute("stroke-width", "5");
+    core.setAttribute("fill", "none"); core.setAttribute("stroke", "#393939"); core.setAttribute("stroke-width", "5");
     svg.appendChild(core);
   }
 
