@@ -13,6 +13,7 @@ form p {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  color: #494949;
 }
 
 .form-group {
@@ -44,9 +45,10 @@ textarea {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-  background: #ffcf3f;
+  background: #efd177;
   font-weight: bold;
   transition: transform 0.2s ease;
+  color: #494949;
 }
 
 .submit-button:hover {

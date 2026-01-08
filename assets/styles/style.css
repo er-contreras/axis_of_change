@@ -78,6 +78,7 @@ menu-wrapper ul li {
   padding: 0 4rem;
   background-color: #1e454921;
   backdrop-filter: blur(5px);
+  color: #8c3939;
 }
 
 .header_left {
@@ -87,7 +88,7 @@ menu-wrapper ul li {
 
 .header_left a {
   text-decoration: none;
-  color: black;
+  color: #262626;
 }
 
 .header_main {
@@ -98,18 +99,18 @@ menu-wrapper ul li {
 
 .header_main a {
   cursor: pointer;
-  color: black;
+  color: #262626;
   text-decoration: none;
 }
 
 .header_main a span {
-  border: 1px solid #333;
+  border: 1px solid #a1a1a1;
   padding: 1rem;
   border-radius: 1rem;
 }
 
 .header_main a span:hover {
-  background-color: #dddddd;
+  background-color: #bcbcbc;
 }
 
 .navigation-menu {
@@ -121,6 +122,11 @@ menu-wrapper ul li {
   list-style-type: none;
   cursor: pointer;
   font-size: larger;
+}
+
+.navigation-menu li:hover {
+  color: #d54646;
+  border-bottom: 1px solid #e8c8c8;
 }
 
 /* Content */
