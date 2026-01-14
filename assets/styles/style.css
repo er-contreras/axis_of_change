@@ -9,8 +9,6 @@ html {
 }
 
 body {
-  background-color: #fff;
-  color: #000;
 }
 
 :root {
@@ -345,7 +343,7 @@ menu-wrapper ul li {
   }
 
   .content p {
-    width: 90rem;
+    width: 90%;
     font-size: 4rem;
     padding-top: 6rem;
     line-height: 5rem;
