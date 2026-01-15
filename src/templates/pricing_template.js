@@ -18,7 +18,7 @@ const PRICING_DATA = [
   {
     title: "Landing Page",
     price: "$3000 MXN",
-    color: "#c79e23",
+    color: "#665400",
     features: [
       "Responsive Design",
       "Basic SEO optimization",
@@ -101,10 +101,10 @@ class PricingWrapper extends HTMLElement {
 
   renderFeature(feature) {
     return `
-      <div class="checks">
+      <li class="checks">
         ${CHECK_ICON}
-        <li>${feature}</li>
-      </div>
+        <div>${feature}</div>
+      </li>
     `;
   }
 }
