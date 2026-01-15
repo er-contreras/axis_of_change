@@ -1,4 +1,4 @@
-(()=>{var x=document.createElement("template");x.innerHTML=`
+(()=>{var y=document.createElement("template");y.innerHTML=`
   <header class="header_header">
     <div class="header_left">
       <a href="index.html#">
@@ -37,7 +37,7 @@
       <div class="lines"></div>
       <div class="lines"></div>
     </div>
-  </header>`;var f=class extends HTMLElement{connectedCallback(){let e=x.content.cloneNode(!0);this.append(e)}};customElements.define("header-wrapper",f);var C=document.createElement("template");C.innerHTML=`
+  </header>`;var p=class extends HTMLElement{connectedCallback(){let e=y.content.cloneNode(!0);this.append(e)}};customElements.define("header-wrapper",p);var k=document.createElement("template");k.innerHTML=`
   <main class="main_main">
     <div class="content-bg"></div>
 
@@ -52,7 +52,7 @@
       <svg width="200" height="180" viewBox="0 0 200 180" aria-hidden="true"></svg>
     </div>
   </main>
-`;var v=class extends HTMLElement{connectedCallback(){this.append(C.content.cloneNode(!0)),"requestIdleCallback"in window?window.requestIdleCallback(()=>this.renderSVG(),{timeout:2e3}):setTimeout(()=>this.renderSVG(),100)}renderSVG(){let e=this.querySelector("svg"),t=100,n=90;e.innerHTML=`
+`;var m=class extends HTMLElement{connectedCallback(){this.append(k.content.cloneNode(!0)),"requestIdleCallback"in window?window.requestIdleCallback(()=>this.renderSVG(),{timeout:2e3}):setTimeout(()=>this.renderSVG(),100)}renderSVG(){let e=this.querySelector("svg"),t=100,n=90;if(e.innerHTML=`
     <defs>
       <filter id="metal-gloss" x="-50%" y="-50%" width="200%" height="200%">
         <feGaussianBlur in="SourceAlpha" stdDeviation="0.4" result="blur" />
@@ -70,12 +70,16 @@
         <stop offset="100%" style="stop-color:#111" />
       </linearGradient>
     </defs>
-  `,[{teeth:24,innerR:82,outerR:90,fill:"url(#steel-dark)",speed:45,dir:1},{teeth:18,innerR:54,outerR:62,fill:"gray",speed:30,dir:-1},{teeth:14,innerR:34,outerR:42,fill:"#B02A2A",speed:25,dir:1},{teeth:12,innerR:20,outerR:28,fill:"white",speed:20,dir:-1}].forEach(({teeth:i,innerR:d,outerR:l,fill:h,speed:u,dir:r})=>{let o=document.createElementNS("http://www.w3.org/2000/svg","path");o.setAttribute("d",this.calculateGearPath(t,n,i,d,l)),o.setAttribute("fill",h),o.setAttribute("filter","url(#metal-gloss)");let p=`rotate-${i}-${u}`,$=`
-        @keyframes ${p} {
-          from { transform: rotate(${r===1?0:360}deg); }
-          to { transform: rotate(${r===1?360:0}deg); }
+  `,!this.animationsAdded){let s=document.createElement("style");s.textContent=`
+        @keyframes gear-rotate-cw {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
         }
-      `;if(!document.getElementById(p)){let m=document.createElement("style");m.id=p,m.textContent=$,document.head.appendChild(m)}o.style.transformOrigin=`${t}px ${n}px`,o.style.animation=`${p} ${u}s linear infinite`,o.style.filter="url(#metal-gloss) drop-shadow(1.5px 1.5px 2px rgba(0,0,0,0.6))",e.appendChild(o)});let s=document.createElementNS("http://www.w3.org/2000/svg","circle");s.setAttribute("cx",t),s.setAttribute("cy",n),s.setAttribute("r","12"),s.setAttribute("fill","none"),s.setAttribute("stroke","#393939"),s.setAttribute("stroke-width","5"),e.appendChild(s)}calculateGearPath(e,t,n,a,s){let i=[],d=Math.PI*2/n,l=d*.35,h=d*.25;for(let u=0;u<n;u++){let r=u*d;i.push(`${e+Math.cos(r-l)*a},${t+Math.sin(r-l)*a}`),i.push(`${e+Math.cos(r-h)*s},${t+Math.sin(r-h)*s}`),i.push(`${e+Math.cos(r+h)*s},${t+Math.sin(r+h)*s}`),i.push(`${e+Math.cos(r+l)*a},${t+Math.sin(r+l)*a}`);let o=r+d/2;i.push(`${e+Math.cos(o-l)*a},${t+Math.sin(o-l)*a}`)}return"M"+i.join(" L")+" Z"}};customElements.define("main-wrapper",v);var E=document.createElement("template");E.innerHTML=`
+        @keyframes gear-rotate-ccw {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0deg); }
+        }
+      `,document.head.appendChild(s),this.animationsAdded=!0}[{teeth:24,innerR:82,outerR:90,fill:"url(#steel-dark)",speed:45,dir:1},{teeth:18,innerR:54,outerR:62,fill:"gray",speed:30,dir:-1},{teeth:14,innerR:34,outerR:42,fill:"#B02A2A",speed:25,dir:1},{teeth:12,innerR:20,outerR:28,fill:"white",speed:20,dir:-1}].forEach(({teeth:s,innerR:d,outerR:l,fill:h,speed:u,dir:r})=>{let o=document.createElementNS("http://www.w3.org/2000/svg","path");o.setAttribute("d",this.calculateGearPath(t,n,s,d,l)),o.setAttribute("fill",h),o.setAttribute("filter","url(#metal-gloss)"),o.style.transformOrigin=`${t}px ${n}px`,o.style.animation=`gear-rotate-${r===1?"cw":"ccw"} ${u}s linear infinite`,o.style.filter="url(#metal-gloss) drop-shadow(1.5px 1.5px 2px rgba(0,0,0,0.6))",e.appendChild(o)});let i=document.createElementNS("http://www.w3.org/2000/svg","circle");i.setAttribute("cx",t),i.setAttribute("cy",n),i.setAttribute("r","12"),i.setAttribute("fill","none"),i.setAttribute("stroke","#393939"),i.setAttribute("stroke-width","5"),e.appendChild(i)}calculateGearPath(e,t,n,a,i){let s=[],d=Math.PI*2/n,l=d*.35,h=d*.25;for(let u=0;u<n;u++){let r=u*d;s.push(`${e+Math.cos(r-l)*a},${t+Math.sin(r-l)*a}`),s.push(`${e+Math.cos(r-h)*i},${t+Math.sin(r-h)*i}`),s.push(`${e+Math.cos(r+h)*i},${t+Math.sin(r+h)*i}`),s.push(`${e+Math.cos(r+l)*a},${t+Math.sin(r+l)*a}`);let o=r+d/2;s.push(`${e+Math.cos(o-l)*a},${t+Math.sin(o-l)*a}`)}return"M"+s.join(" L")+" Z"}};customElements.define("main-wrapper",m);var x=document.createElement("template");x.innerHTML=`
   <div class="about-wrapper">
     <div id="about" class="about-section">
       <h2>About</h2>
@@ -94,14 +98,14 @@
         </p>
       </div>
     </div>
-  </div>`;var g=class extends HTMLElement{connectedCallback(){let e=E.content.cloneNode(!0);this.append(e)}};customElements.define("about-wrapper",g);var T=[{title:"Business Website",price:"",color:"#cd5050",features:["Home","About Us","Services","Contact","Blog","Mobile-friendly design","SEO-ready structure"],cta:"Contact for pricing",link:"index.html#contact"},{title:"Landing Page",price:"$3000 MXN",color:"#665400",features:["Responsive Design","Basic SEO optimization","Contact Form","Up to 3 Sections","Fast delivery"],cta:"Book a demo",link:"index.html#contact"},{title:"Custome Web Application",price:"",color:"#2d868b",features:["Internal tools","Client dashboards","Inventory systems","Automation workflows","Any custom functionality"],cta:"Book a consultation",link:"index.html#contact"}],q=`
+  </div>`;var f=class extends HTMLElement{connectedCallback(){let e=x.content.cloneNode(!0);this.append(e)}};customElements.define("about-wrapper",f);var L=[{title:"Business Website",price:"",color:"#cd5050",features:["Home","About Us","Services","Contact","Blog","Mobile-friendly design","SEO-ready structure"],cta:"Contact for pricing",link:"index.html#contact"},{title:"Landing Page",price:"$3000 MXN",color:"#665400",features:["Responsive Design","Basic SEO optimization","Contact Form","Up to 3 Sections","Fast delivery"],cta:"Book a demo",link:"index.html#contact"},{title:"Custome Web Application",price:"",color:"#2d868b",features:["Internal tools","Client dashboards","Inventory systems","Automation workflows","Any custom functionality"],cta:"Book a consultation",link:"index.html#contact"}],A=`
   <svg fill="#000000" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
     <path d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5
       l-3.1-3.1c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8
       c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2
       C19.1,8.2,19.1,7.6,18.7,7.2z"/>
   </svg>
-`,b=class extends HTMLElement{connectedCallback(){this.innerHTML=this.renderPrices()}renderPrices(){return`
+`,v=class extends HTMLElement{connectedCallback(){this.innerHTML=this.renderPrices()}renderPrices(){return`
       <div id="prices" class="prices-h2">
         <h2>Pricing</h2>
         <p>Choose the project that best suits your needs.</p>
@@ -109,7 +113,7 @@
 
         <div class="prices-container">
           <section class="prices-section">
-            ${T.map(e=>this.renderPlan(e)).join("")}
+            ${L.map(e=>this.renderPlan(e)).join("")}
           </section>
         </div>
     `}renderPlan(e){return`
@@ -135,10 +139,10 @@
         </div>
     `}renderFeature(e){return`
       <li class="checks">
-        ${q}
+        ${A}
         <div>${e}</div>
       </li>
-    `}};customElements.define("pricing-wrapper",b);var S=document.createElement("template");S.innerHTML=`
+    `}};customElements.define("pricing-wrapper",v);var C=document.createElement("template");C.innerHTML=`
   <form class="contact-form" novalidate>
     <h2>Get in touch</h2>
     <p class="form-subtitle">
@@ -171,7 +175,7 @@
 
     <p class="form-status" hidden></p>
   </form>
-`;var y=class extends HTMLElement{connectedCallback(){this.append(S.content.cloneNode(!0)),this.form=this.querySelector("form"),this.status=this.querySelector(".form-status"),this.form.addEventListener("submit",this.handleSubmit.bind(this))}async handleSubmit(e){if(e.preventDefault(),!this.form.checkValidity()){this.showStatus("Please complete all required fields.","error");return}this.setLoading(!0);try{if(!(await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({access_key:this.accessKey,subject:"New Submission from Website",...Object.fromEntries(new FormData(this.form))})})).ok)throw new Error("Submission failed");this.form.reset(),this.showStatus("Message sent successfully. I will contact you shortly.","success")}catch(t){this.showStatus("Something went wrong. Please try again later.","error")}finally{this.setLoading(!1)}}showStatus(e,t){this.status.textContent=e,this.status.hidden=!1,this.status.dataset.type=t}setLoading(e){this.form.querySelector("button").disabled=e}get accessKey(){return this.getAttribute("access-key")}};customElements.define("contact-wrapper",y);var M={linkedin:`
+`;var g=class extends HTMLElement{connectedCallback(){this.append(C.content.cloneNode(!0)),this.form=this.querySelector("form"),this.status=this.querySelector(".form-status"),this.form.addEventListener("submit",this.handleSubmit.bind(this))}async handleSubmit(e){if(e.preventDefault(),!this.form.checkValidity()){this.showStatus("Please complete all required fields.","error");return}this.setLoading(!0);try{if(!(await fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({access_key:this.accessKey,subject:"New Submission from Website",...Object.fromEntries(new FormData(this.form))})})).ok)throw new Error("Submission failed");this.form.reset(),this.showStatus("Message sent successfully. I will contact you shortly.","success")}catch(t){this.showStatus("Something went wrong. Please try again later.","error")}finally{this.setLoading(!1)}}showStatus(e,t){this.status.textContent=e,this.status.hidden=!1,this.status.dataset.type=t}setLoading(e){this.form.querySelector("button").disabled=e}get accessKey(){return this.getAttribute("access-key")}};customElements.define("contact-wrapper",g);var S={linkedin:`
 <svg class="linkedin-icon" width="32" height="32" fill="#8c8c8c" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" stroke="#8c8c8c" aria-hidden="true">
   <title>linkedin</title>
   <path d="M28.778 1.004h-25.56c-1.2 0-2.186 0.964-2.186 2.159v25.672c0 1.196 0.986 2.161 2.186 2.161h25.555c1.2 0 2.195-0.963 2.195-2.159v-25.67c0-1.197-0.995-2.161-2.195-2.161zM9.9 26.562h-4.454v-14.311h4.454zM7.674 10.293c-1.425 0-2.579-1.155-2.579-2.579s1.155-2.579 2.579-2.579c1.424 0 2.579 1.154 2.579 2.578 0 1.425-1.154 2.58-2.579 2.58zM26.556 26.562h-4.441v-6.959c0-1.66-0.034-3.795-2.314-3.795-2.316 0-2.669 1.806-2.669 3.673v7.082h-4.441v-14.311h4.266v1.951h0.058c0.828-1.395 2.326-2.315 4.039-2.315 4.5 0 5.332 2.962 5.332 6.817v7.855z"/>
@@ -188,7 +192,7 @@
     <path d="M32 6c-14.359 0-26 11.641-26 26 0 12.277 8.512 22.56 19.955 25.286 0.592 0.141 1.179 0.299 1.755 0.479v-8.557c0-2.337-0.972-4.42-2.6-5.85-6.097-1.219-10.4-4.716-10.4-10.4 0-2.876 1.134-5.525 3.032-7.678-0.164-0.507-0.432-1.682-0.432-3.697 0-1.235 0.086-2.751 0.65-4.225 0 0 3.708 0.026 7.205 3.338 1.614-0.47 3.341-0.738 5.145-0.738 1.804 0 3.531 0.268 5.145 0.738 3.497-3.312 7.205-3.338 7.205-3.338 0.567 1.474 0.65 2.99 0.65 4.225 0 1.869-0.333 3.016-0.533 3.583 1.958 2.173 3.133 4.864 3.133 7.792 0 5.684-4.303 9.181-10.4 10.4 1.37 1.204 2.21 2.886 2.478 4.774 0.58 0.28 1.422 0.426 2.397 0.426 0.783 0 2.304-0.37 3.721-2.577 0.572-0.894 1.804-2.623 3.429-2.623 0.317 0 0.985-0.02 0.975 0.471-0.005 0.234-0.364 0.236-1.131 0.92-0.642 0.575-1.24 1.516-1.469 2.509-0.377 1.63-1.888 4.875-5.525 4.875-1.3 0-2.275-0.325-2.275-0.325v5.957c0.576 0.18 1.163 0.338 1.755 0.479C49.488 54.56 58 44.277 58 32 58 17.641 46.359 6 32 6z"/>
   </g>
 </svg>
-`};var L=document.createElement("template");L.innerHTML=`
+`};var E=document.createElement("template");E.innerHTML=`
   <footer>
     <div class="footer">
       <section class="content-2">
@@ -227,7 +231,7 @@
       </p>
     </div>
   </footer>
-`;var w=class extends HTMLElement{connectedCallback(){this.append(L.content.cloneNode(!0)),this.renderYear(),this.renderLists(),this.renderSocialLinks()}renderYear(){this.querySelector(".year").textContent=new Date().getFullYear()}renderLists(){let e=["Web development","Mobile development","E-commerce","CMS / CRM","Business automation"],t=["Reliable & scalable","Secure by design","Cost-effective","Integrations that grow with you","Long-term maintainability"];this.fillList(".services-list",e),this.fillList(".reasons-list",t)}fillList(e,t){let n=this.querySelector(e);t.forEach(a=>{let s=document.createElement("li");s.textContent=a,n.appendChild(s)})}renderSocialLinks(){let e=[{name:"LinkedIn",href:"https://www.linkedin.com/in/er-contreras/",icon:"linkedin"},{name:"Twitter",href:"https://twitter.com/er_contreras_",icon:"twitter"},{name:"GitHub",href:"https://github.com/er-contreras",icon:"github"}],t=this.querySelector(".social-media");e.forEach(({name:n,href:a,icon:s})=>{let i=document.createElement("a");i.href=a,i.target="_blank",i.rel="noopener noreferrer",i.setAttribute("aria-label",n),i.innerHTML=M[s],t.appendChild(i)})}};customElements.define("footer-wrapper",w);var A=document.createElement("template");A.innerHTML=`
+`;var b=class extends HTMLElement{connectedCallback(){this.append(E.content.cloneNode(!0)),this.renderYear(),this.renderLists(),this.renderSocialLinks()}renderYear(){this.querySelector(".year").textContent=new Date().getFullYear()}renderLists(){let e=["Web development","Mobile development","E-commerce","CMS / CRM","Business automation"],t=["Reliable & scalable","Secure by design","Cost-effective","Integrations that grow with you","Long-term maintainability"];this.fillList(".services-list",e),this.fillList(".reasons-list",t)}fillList(e,t){let n=this.querySelector(e);t.forEach(a=>{let i=document.createElement("li");i.textContent=a,n.appendChild(i)})}renderSocialLinks(){let e=[{name:"LinkedIn",href:"https://www.linkedin.com/in/er-contreras/",icon:"linkedin"},{name:"Twitter",href:"https://twitter.com/er_contreras_",icon:"twitter"},{name:"GitHub",href:"https://github.com/er-contreras",icon:"github"}],t=this.querySelector(".social-media");e.forEach(({name:n,href:a,icon:i})=>{let s=document.createElement("a");s.href=a,s.target="_blank",s.rel="noopener noreferrer",s.setAttribute("aria-label",n),s.innerHTML=S[i],t.appendChild(s)})}};customElements.define("footer-wrapper",b);var M=document.createElement("template");M.innerHTML=`
   <div class="popup-menu">
     <div class="top-popup-menu">
       <h2>Menu</h2>
@@ -244,4 +248,4 @@
       </ul>
     </div>
   </div>
-`;var k=class extends HTMLElement{connectedCallback(){var n;this.append(A.content.cloneNode(!0));let e=this.querySelector(".close-btn");(n=document.querySelector(".menu-button"))==null||n.addEventListener("click",()=>{this.style.display="block"}),e.addEventListener("click",()=>{this.style.display="none"}),this.querySelectorAll(".link").forEach(a=>{a.addEventListener("click",()=>{this.style.display="none"})})}};customElements.define("menu-wrapper",k);})();
+`;var w=class extends HTMLElement{connectedCallback(){var n;this.append(M.content.cloneNode(!0));let e=this.querySelector(".close-btn");(n=document.querySelector(".menu-button"))==null||n.addEventListener("click",()=>{this.style.display="block"}),e.addEventListener("click",()=>{this.style.display="none"}),this.querySelectorAll(".link").forEach(a=>{a.addEventListener("click",()=>{this.style.display="none"})})}};customElements.define("menu-wrapper",w);})();
