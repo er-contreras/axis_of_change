@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild src/main.js assets/styles/main.css --bundle --minify --format=iife --target=es2018 --outdir=dist",
+    "build": "esbuild src/main.js --bundle --minify --format=iife --target=es2018 --outfile=dist/app.js && esbuild assets/styles/main.css --bundle --minify --outfile=dist/styles.css",
     "watch": "esbuild src/main.js assets/styles/main.css --bundle --format=iife --target=es2018 --outdir=dist --watch"
   },
   "repository": {
