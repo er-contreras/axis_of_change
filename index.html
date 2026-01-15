@@ -39,7 +39,7 @@
   <link rel="preload" href="./dist/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="./dist/styles.css"></noscript>
   
-  <!-- Preload polyfill for older browsers -->
+  <!-- Preload polyfill for older browsers (loadCSS by Filament Group) -->
   <script>!function(e){"use strict";var t=function(t,n,r){var o,i=e.document,s=i.createElement("link");if(n)o=n;else{var a=(i.body||i.getElementsByTagName("head")[0]).childNodes;o=a[a.length-1]}var l=i.styleSheets;s.rel="stylesheet",s.href=t,s.media="only x";function d(e){if(i.body)return e();setTimeout(function(){d(e)})}d(function(){o.parentNode.insertBefore(s,n?o:o.nextSibling)});var u=function(e){for(var t=s.href,n=l.length;n--;)if(l[n].href===t)return e();setTimeout(function(){u(e)})};function f(){s.addEventListener&&s.removeEventListener("load",f),s.media=r||"all"}return s.addEventListener&&s.addEventListener("load",f),s.onloadcssdefined=u,u(f),s};"undefined"!=typeof exports?exports.loadCSS=t:e.loadCSS=t}("undefined"!=typeof global?global:this);</script>
 
   <script defer src="./dist/app.js"></script>
