@@ -143,7 +143,6 @@ menu-wrapper ul li {
 
 .main_main {
   position: relative;
-  min-height: 70rem;
 }
 
 .content-bg {
@@ -158,8 +157,7 @@ menu-wrapper ul li {
 .content {
   flex-direction: column;
   align-items: center;
-  position: relative;
-  top: 10rem;
+  padding-top: 3rem;
   max-width: 80%;
   text-align: center;
   margin: 0 auto;
@@ -181,9 +179,9 @@ menu-wrapper ul li {
 
 .svg {
   justify-content: center;
-  margin-top: 20rem;
+  padding: 8rem 0;
+  position: inherit;
   z-index: 1;
-  position: relative;
 }
 
 /* Divisor */
@@ -329,10 +327,6 @@ menu-wrapper ul li {
     left: 1.5rem;
   }
 
-  .main_main {
-    min-height: 100rem;
-  }
-  
   .under-construction {
     top: 10rem;
     font-size: 4.5rem;
@@ -418,8 +412,8 @@ menu-wrapper ul li {
 
 @media (max-width: 480px) {
   .hidden_header {
-    font-size: 2rem;
-    padding: 3rem;
+    font-size: 1.5rem;
+    padding: 1.5rem;
   }
 
   .header_button {
@@ -435,10 +429,6 @@ menu-wrapper ul li {
   }
 
   /* Main content */
-  .main_main {
-    min-height: 70rem;
-  }
-
   .content h1 {
     font-size: 3rem;
   }

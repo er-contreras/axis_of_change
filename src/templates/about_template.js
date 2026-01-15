@@ -12,7 +12,7 @@ about_template.innerHTML = /* InnerHTML */`
         </p>
         <br>
         <p>
-          With experience in Ruby on Rails, JavaScript, UI design, and technical
+          With experience in the Backend, UI design, and technical
           SEO, I focus on one thing: delivering web solutions that generate real
           business results, not just pretty pages.
         </p>

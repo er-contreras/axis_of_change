@@ -124,8 +124,8 @@
   }
 
   .price-description svg {
-    width: 8rem;
-    height: 4.5rem;
+    width: 5rem;
+    height: 3rem;
   }
 
   .prices-h2 p {
@@ -178,7 +178,7 @@
   }
 
   .contract-btn {
-    margin: 2rem auto 2rem;
+    margin: 2rem auto 0rem;
     font-size: 2.5rem;
   }
 }

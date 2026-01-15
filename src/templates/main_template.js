@@ -5,7 +5,7 @@ main_template.innerHTML = `
 
     <section class="content">
       <h1 class="hero-title">
-        I create custom websites and applications built to increase trust, boost sales, and move your business forward.
+        Built to increase trust, boost sales, and move your business forward.
       </h1>
       <p>Practical, secure, and built for growth.</p>
     </section>

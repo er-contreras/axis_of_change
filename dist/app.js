@@ -57,7 +57,9 @@
     <div class="content-bg"></div>
 
     <section class="content">
-      <h1>I create custom websites and applications built to increase trust, boost sales, and move your business forward.</h1>
+      <h1 class="hero-title">
+        Built to increase trust, boost sales, and move your business forward.
+      </h1>
       <p>Practical, secure, and built for growth.</p>
     </section>
 
@@ -169,7 +171,7 @@
         </p>
         <br>
         <p>
-          With experience in Ruby on Rails, JavaScript, UI design, and technical
+          With experience in the Backend, UI design, and technical
           SEO, I focus on one thing: delivering web solutions that generate real
           business results, not just pretty pages.
         </p>
