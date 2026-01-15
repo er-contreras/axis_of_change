@@ -7,8 +7,6 @@
 html {
   font-size: 62.5%;
 }
-body {
-}
 :root {
   --primary-bg-color: #1b7b8914 ;
 }
@@ -157,6 +155,8 @@ menu-wrapper ul li {
   line-height: 3rem;
 }
 .svg {
+  will-change: transform, filter;
+  contain: paint;
   justify-content: center;
   padding: 8rem 0;
   position: inherit;

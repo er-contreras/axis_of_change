@@ -19,7 +19,12 @@ main_template.innerHTML = `
 class MainWrapper extends HTMLElement {
   connectedCallback() {
     this.append(main_template.content.cloneNode(true));
-    this.renderSVG();
+    // Usar requestIdleCallback para ejecutar el SVG cuando el hilo principal esté libre
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(() => this.renderSVG());
+    } else {
+      setTimeout(() => this.renderSVG(), 100);
+    }
   }
 
   renderSVG() {
@@ -29,8 +34,8 @@ class MainWrapper extends HTMLElement {
 
     svg.innerHTML = `
     <defs>
-      <filter id="metal-gloss" x="-50%" y="-50%" width="200%" height="200%">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="0.8" result="blur" />
+      <filter id="metal-gloss" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="0.4" result="blur" />
         <feSpecularLighting in="blur"
           surfaceScale="3"
           specularConstant="0.7"
