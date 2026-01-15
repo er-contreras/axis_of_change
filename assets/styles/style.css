@@ -454,4 +454,18 @@ menu-wrapper ul li {
   menu-wrapper {
     font-size: 3rem;
   }
+
+  menu-wrapper .top-popup-menu {
+    padding: 3rem 4rem;
+  }
+
+  menu-wrapper .popup-menu-options {
+    font-size: 3rem;
+  }
+
+  menu-wrapper ul li {
+    padding: 3rem 0 2rem 4rem;
+    border-bottom: 1px solid gray;
+    width: 80%;
+  }
 }
