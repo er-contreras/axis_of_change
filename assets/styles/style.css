@@ -417,15 +417,15 @@ menu-wrapper ul li {
   }
 
   .header_button {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
     gap: 1rem;
   }
 
   .lines {
-    max-width: 5rem;
+    max-width: 3.5rem;
     height: 0.2rem;
-    left: 4px;
+    left: 7px;
   }
 
   /* Main content */
