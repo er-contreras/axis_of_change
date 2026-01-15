@@ -132,3 +132,53 @@
     font-size: 4rem;
   }
 }
+
+@media (max-width: 480px) {
+  .prices-h2 {
+    padding: 7rem 0 1rem 0;
+  }
+
+  .prices-h2 h2 {
+    font-size: 4.2rem;
+  }
+
+  .prices-h2 p {
+    font-size: 2rem;
+  }
+
+  .price-header {
+    text-align: center;
+  }
+
+  .price-container {
+    justify-content: unset;
+    padding-top: 3rem;
+    min-height: unset;
+    margin-bottom: 3rem;
+  }
+
+  .price-container h2 {
+    font-size: 3.5rem;
+  }
+
+  .price-container p {
+    font-size: 3rem;
+  }
+
+  .prices-section {
+    padding: 2rem;
+  }
+
+  .price-description {
+    padding-top: 1rem;
+  }
+
+  .price-container li {
+    font-size: 2.5rem;
+  }
+
+  .contract-btn {
+    margin: 2rem auto 2rem;
+    font-size: 2.5rem;
+  }
+}

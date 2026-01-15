@@ -4,3 +4,52 @@
   color: #494949;
 }
 
+@media (max-width: 480px) {
+  footer {
+    padding-top: 2rem;
+  }
+
+  .footer {
+    padding: 0rem;
+  }
+
+  .footer h2 {
+    font-size: 2.5rem;
+  }
+  
+  .content-2-lines ul {
+    font-size: 2rem;
+    padding-top: 2rem;
+    position: relative;
+    left: 2rem;
+  }
+
+  .content-2-lines ul li {
+    line-height: 2.5rem;
+  }
+
+  .content-2-lines h2 {
+    font-size: 2rem;
+  }
+
+  .linkedin-icon {
+    width: 3rem !important;
+  }
+
+  .social-media {
+    margin-top: 2rem;
+  }
+
+  .social-media a svg {
+    width: 3rem;
+  }
+
+  .connect-with-us {
+    padding: 6rem 1rem 3rem;
+  }
+
+  .rights-reserved {
+    font-size: 1.6rem;
+  }
+}
+

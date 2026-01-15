@@ -415,3 +415,43 @@ menu-wrapper ul li {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .hidden_header {
+    font-size: 2rem;
+    padding: 3rem;
+  }
+
+  .header_button {
+    width: 6rem;
+    height: 6rem;
+    gap: 1rem;
+  }
+
+  .lines {
+    max-width: 5rem;
+    height: 0.2rem;
+    left: 4px;
+  }
+
+  /* Main content */
+  .main_main {
+    min-height: 70rem;
+  }
+
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    width: 50%;
+    font-size: 1.7rem;
+    padding-top: 2rem;
+    line-height: 2rem;
+  }
+
+  /* Menu wrapper */
+  menu-wrapper {
+    font-size: 3rem;
+  }
+}
