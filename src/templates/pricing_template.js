@@ -46,7 +46,7 @@ const PRICING_DATA = [
 ];
 
 const CHECK_ICON = `
-  <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24">
+  <svg fill="#000000" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
     <path d="M18.7,7.2c-0.4-0.4-1-0.4-1.4,0l-7.5,7.5
       l-3.1-3.1c-0.4-0.4-1-0.4-1.4,0c-0.4,0.4-0.4,1,0,1.4l3.8,3.8
       c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l8.2-8.2
