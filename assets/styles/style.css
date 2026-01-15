@@ -196,6 +196,12 @@ menu-wrapper ul li {
   z-index: 1;
 }
 
+.svg svg {
+  width: 200px;
+  height: 180px;
+  aspect-ratio: 200 / 180;
+}
+
 /* Divisor */
 .divisor {
   height: 1rem;
