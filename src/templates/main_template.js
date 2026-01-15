@@ -53,6 +53,23 @@ class MainWrapper extends HTMLElement {
     </defs>
   `;
 
+    // Add animations only once per component instance
+    if (!this.animationsAdded) {
+      const style = document.createElement('style');
+      style.textContent = `
+        @keyframes gear-rotate-cw {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+        @keyframes gear-rotate-ccw {
+          from { transform: rotate(360deg); }
+          to { transform: rotate(0deg); }
+        }
+      `;
+      document.head.appendChild(style);
+      this.animationsAdded = true;
+    }
+
     // Reduced number of gears from 7 to 4 for better performance
     const layers = [
       { teeth: 24, innerR: 82, outerR: 90, fill: "url(#steel-dark)", speed: 45, dir: 1 },
@@ -67,25 +84,8 @@ class MainWrapper extends HTMLElement {
       gear.setAttribute("fill", fill);
       gear.setAttribute("filter", "url(#metal-gloss)");
 
-      // Use CSS animations instead of SVG animateTransform for better performance
-      const animationId = `rotate-${teeth}-${speed}`;
-      const keyframes = `
-        @keyframes ${animationId} {
-          from { transform: rotate(${dir === 1 ? 0 : 360}deg); }
-          to { transform: rotate(${dir === 1 ? 360 : 0}deg); }
-        }
-      `;
-      
-      // Add keyframes to document if not already present
-      if (!document.getElementById(animationId)) {
-        const style = document.createElement('style');
-        style.id = animationId;
-        style.textContent = keyframes;
-        document.head.appendChild(style);
-      }
-
       gear.style.transformOrigin = `${centerX}px ${centerY}px`;
-      gear.style.animation = `${animationId} ${speed}s linear infinite`;
+      gear.style.animation = `gear-rotate-${dir === 1 ? 'cw' : 'ccw'} ${speed}s linear infinite`;
       gear.style.filter = "url(#metal-gloss) drop-shadow(1.5px 1.5px 2px rgba(0,0,0,0.6))";
 
       svg.appendChild(gear);
