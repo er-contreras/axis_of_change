@@ -24,8 +24,8 @@
     <div class="header_main">
       <a href="index.html#contact"><span>Contact</span></a>
       <a href="https://calendly.com/er-contreras" target="_blank">
-        <span style="display: flex; gap: 1rem;">
-          <img style="width: 2rem;" src="./assets/phone.png" alt="Phone icon" width="32" height="32" loading="lazy">
+        <span style="display: flex; gap: 1rem; align-items: center;">
+          <img src="./assets/phone.png" alt="Phone icon" width="15" height="15" loading="lazy">
           BOOK A FREE CONSULTATION
         </span>
       </a>
