@@ -4,7 +4,6 @@
 
 .about-section {
   padding: 15rem 0;
-  text-align: center;
   width: 75%;
   margin: 0 auto;
   color: #494949;
@@ -32,7 +31,6 @@
     align-items: center;
     padding: 7rem;
     width: 100%;
-    text-align: justify;
   }
 
   .about-description {

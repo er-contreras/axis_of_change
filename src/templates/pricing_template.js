@@ -1,46 +1,44 @@
-const PRICING_DATA = [
+let PRICING_DATA = [
   {
-    title: "Business Website",
-    price: "",
-    color: "#cd5050",
-    features: [
-      "Home",
-      "About Us",
-      "Services",
-      "Contact",
-      "Blog",
-      "Mobile-friendly design",
-      "SEO-ready structure"
-    ],
-    cta: "Contact for pricing",
-    link: "index.html#contact"
-  },
-  {
-    title: "Landing Page",
-    price: "$3000 MXN",
+    title: "Wireless Intelligence Audit",
+    price: "$2500 MXN",
     color: "#665400",
     features: [
-      "Responsive Design",
-      "Basic SEO optimization",
-      "Contact Form",
-      "Up to 3 Sections",
-      "Fast delivery"
+      "Signal Interference Mapping",
+      "Rogue Device Detection",
+      "Spectrum Congestion Analysis",
+      "Physical Security Survey",
+      "Optimization Report"
     ],
-    cta: "Book a demo",
+    cta: "Schedule Audit",
     link: "index.html#contact"
   },
   {
-    title: "Custome Web Application",
+    title: "Signals Intelligence Outpost",
+    price: "Custom",
+    color: "#cd5050",
+    features: [
+      "Passive Proximity Monitoring",
+      "Automated RF Telemetry",
+      "Native Rust-Engine Dashboards",
+      "24/7 Airspace Logging",
+      "Secure Local-First Architecture"
+    ],
+    cta: "Book Consultation",
+    link: "index.html#contact"
+  },
+  {
+    title: "Custom Systems Engineering",
     price: "",
     color: "#2d868b",
     features: [
-      "Internal tools",
-      "Client dashboards",
-      "Inventory systems",
-      "Automation workflows",
-      "Any custom functionality"
+      "Embedded Linux Solutions",
+      "Real-time Data Processing",
+      "High-performance GUI (No Web)",
+      "Hardware Integration",
+      "Military-Grade Reliability"
     ],
-    cta: "Book a consultation",
+    cta: "Inquire Now",
     link: "index.html#contact"
   }
 ];

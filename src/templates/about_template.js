@@ -1,20 +1,22 @@
-const about_template = document.createElement("template");
-about_template.innerHTML = /* InnerHTML */`
+var about_template = document.createElement("template");
+about_template.innerHTML = `
   <div class="about-wrapper">
     <div id="about" class="about-section">
-      <h2>About</h2>
+      <h2>Technical Philosophy</h2>
       <div class="about-description">
         <p>
-          Axis of Change exists to help businesses grow with clean, fast, and
-          purpose-built web applications. I build every project from scratch using
-          modern web technologies, no templates, no shortcuts so your business
-          gets a website that is reliable, scalable, and truly yours.
+          Axis of Change is a Systems Engineering outpost dedicated to 
+          <strong>Environmental Intelligence</strong>. I don't just build websites; 
+          I build high-performance tools that bridge the gap between 
+          radio frequencies and digital decision-making.
         </p>
         <br>
         <p>
-          With experience in the Backend, UI design, and technical
-          SEO, I focus on one thing: delivering web solutions that generate real
-          business results, not just pretty pages.
+          By leveraging low-level technologies like <strong>Rust</strong>, 
+          <strong>SDR (Software Defined Radio)</strong>, and native 
+          rendering, I help businesses visualize the invisible identifying 
+          security threats in the airwaves and optimizing the physical 
+          infrastructure of the digital age.
         </p>
       </div>
     </div>

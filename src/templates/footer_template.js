@@ -57,21 +57,19 @@ class FooterWrapper extends HTMLElement {
 
   renderLists() {
     const services = [
-      "Web development",
-      "Mobile development",
-      "E-commerce",
-      "CMS / CRM",
-      "Business automation"
+      "Wireless Site Surveys",
+      "RF Spectrum Analysis",
+      "Rust Systems Development",
+      "Signal Intelligence Tools",
+      "Native Dashboard Design"
     ];
-
     const reasons = [
-      "Reliable & scalable",
-      "Secure by design",
-      "Cost-effective",
-      "Integrations that grow with you",
-      "Long-term maintainability"
+      "Low-latency Performance",
+      "Hardware-Level Expertise",
+      "Privacy-First (No-Cloud)",
+      "Advanced Signal Processing",
+      "Direct Systems Agency"
     ];
-
     this.fillList(".services-list", services);
     this.fillList(".reasons-list", reasons);
   }
@@ -88,8 +86,8 @@ class FooterWrapper extends HTMLElement {
   renderSocialLinks() {
     const socials = [
       { name: "LinkedIn", href: "https://www.linkedin.com/in/er-contreras/", icon: "linkedin" },
-      { name: "Twitter",  href: "https://twitter.com/er_contreras_", icon: "twitter" },
-      { name: "GitHub",   href: "https://github.com/er-contreras", icon: "github" },
+      { name: "Twitter", href: "https://twitter.com/er_contreras_", icon: "twitter" },
+      { name: "GitHub", href: "https://github.com/er-contreras", icon: "github" },
     ];
 
     const container = this.querySelector(".social-media");
