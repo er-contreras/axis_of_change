@@ -5,18 +5,19 @@ about_template.innerHTML = `
       <h2>Technical Philosophy</h2>
       <div class="about-description">
         <p>
-          Axis of Change is a Systems Engineering outpost dedicated to 
-          <strong>Environmental Intelligence</strong>. I don't just build websites; 
-          I build high-performance tools that bridge the gap between 
-          radio frequencies and digital decision-making.
+          Axis of Change is an engineering practice dedicated to 
+          <strong>System Resilience and Performance</strong>. We don’t just write code; 
+          we engineer high-performance backends and robust infrastructure 
+          designed to survive high-traffic, mission-critical environments.
         </p>
         <br>
         <p>
-          By leveraging low-level technologies like <strong>Rust</strong>, 
-          <strong>SDR (Software Defined Radio)</strong>, and native 
-          rendering, I help businesses visualize the invisible identifying 
-          security threats in the airwaves and optimizing the physical 
-          infrastructure of the digital age.
+          By maintaining a <strong>language-agnostic</strong> approach, we prioritize 
+          the best tool for the objective whether that involves high-level 
+          application logic or low-level system optimization. Our focus is on 
+          eliminating technical debt, automating deployment pipelines, and 
+          ensuring that every system we touch is faster, more secure, and 
+          infinitely more reliable.
         </p>
       </div>
     </div>

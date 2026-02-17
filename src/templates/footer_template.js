@@ -36,7 +36,7 @@ footer_template.innerHTML = /* html */`
 
       <p>
         &copy; <span class="year"></span>
-        Axis of Change | Building reliable digital experience | All Rights Reserved
+        Axis of Change | Engineering High-Performance Systems | All Rights Reserved
       </p>
     </div>
   </footer>
@@ -57,18 +57,18 @@ class FooterWrapper extends HTMLElement {
 
   renderLists() {
     const services = [
-      "Wireless Site Surveys",
-      "RF Spectrum Analysis",
-      "Rust Systems Development",
-      "Signal Intelligence Tools",
-      "Native Dashboard Design"
+      "Backend Architecture",
+      "System Performance Tuning",
+      "Infrastructure Automation",
+      "API Design & Scaling",
+      "CI/CD Pipeline Engineering"
     ];
     const reasons = [
-      "Low-latency Performance",
-      "Hardware-Level Expertise",
-      "Privacy-First (No-Cloud)",
-      "Advanced Signal Processing",
-      "Direct Systems Agency"
+      "Language-Agnostic Mastery",
+      "Mission-Critical Reliability",
+      "Resource-Efficient Design",
+      "Seamless Deployment Workflows",
+      "Senior-Level Strategic Consulting"
     ];
     this.fillList(".services-list", services);
     this.fillList(".reasons-list", reasons);
@@ -105,4 +105,3 @@ class FooterWrapper extends HTMLElement {
 }
 
 customElements.define("footer-wrapper", FooterWrapper);
-

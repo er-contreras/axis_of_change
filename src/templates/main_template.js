@@ -4,10 +4,8 @@ main_template.innerHTML = `
     <div class="content-bg"></div>
 
     <section class="content">
-      <h1 class="hero-title">
-        Signals Intelligence & Systems Engineering for the Physical World.
-      </h1>
-      <p>Mapping the invisible. Securing the airwaves. Building the Outpost.</p>
+      <h1 class="hero-title">High-Performance Systems</h1>
+      <p>We build resilient systems that bridge the gap between hardware and the cloud.</p>
     </section>
 
     <div class="svg">

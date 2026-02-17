@@ -1,42 +1,42 @@
 let PRICING_DATA = [
   {
-    title: "Wireless Intelligence Audit",
-    price: "$2500 MXN",
+    title: "System Performance Audit",
+    price: "Fixed Rate",
     color: "#665400",
     features: [
-      "Signal Interference Mapping",
-      "Rogue Device Detection",
-      "Spectrum Congestion Analysis",
-      "Physical Security Survey",
-      "Optimization Report"
+      "Latency & Bottleneck Analysis",
+      "Resource Consumption Profiling",
+      "Infrastructure Security Review",
+      "Scalability Roadmapping",
+      "Comprehensive Optimization Report"
     ],
     cta: "Schedule Audit",
     link: "index.html#contact"
   },
   {
-    title: "Signals Intelligence Outpost",
-    price: "Custom",
+    title: "High-Performance Engineering",
+    price: "Project-Based",
     color: "#cd5050",
     features: [
-      "Passive Proximity Monitoring",
-      "Automated RF Telemetry",
-      "Native Rust-Engine Dashboards",
-      "24/7 Airspace Logging",
-      "Secure Local-First Architecture"
+      "Custom Backend Architecture",
+      "Database Design & Optimization",
+      "Low-Latency Execution Logic",
+      "Language-Agnostic Core Services",
+      "Reliability"
     ],
     cta: "Book Consultation",
     link: "index.html#contact"
   },
   {
-    title: "Custom Systems Engineering",
-    price: "",
+    title: "Infrastructure & Deployment",
+    price: "Retainer",
     color: "#2d868b",
     features: [
-      "Embedded Linux Solutions",
-      "Real-time Data Processing",
-      "High-performance GUI (No Web)",
-      "Hardware Integration",
-      "Military-Grade Reliability"
+      "CI/CD Pipeline Automation",
+      "Containerization Strategy",
+      "Automated Health Monitoring",
+      "Zero-Downtime Deployment",
+      "Security & Uptime Maintenance"
     ],
     cta: "Inquire Now",
     link: "index.html#contact"
