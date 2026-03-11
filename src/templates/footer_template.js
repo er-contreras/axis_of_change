@@ -17,7 +17,7 @@ footer_template.innerHTML = /* html */`
         </div>
 
         <div class="connect-with-us">
-          <h2>Connect with Us</h2>
+          <h2>Share</h2>
           <div class="social-media"></div>
         </div>
 
@@ -84,10 +84,13 @@ class FooterWrapper extends HTMLElement {
   }
 
   renderSocialLinks() {
+    const url = "www.axisofchange.xyz";
+    let encoded_url = encodeURIComponent(url);
+
     const socials = [
-      { name: "LinkedIn", href: "https://www.linkedin.com/in/er-contreras/", icon: "linkedin" },
-      { name: "Twitter", href: "https://twitter.com/er_contreras_", icon: "twitter" },
-      { name: "GitHub", href: "https://github.com/er-contreras", icon: "github" },
+      { name: "LinkedIn", href: `https://www.linkedin.com/share?url=${encoded_url}`, icon: "linkedin" },
+      { name: "Twitter", href: `https://twitter.com/share?url=${url}`, icon: "twitter" },
+      { name: "Facebook", href: `https://facebook.com/share?url=${url}`, icon: "facebook" },
     ];
 
     const container = this.querySelector(".social-media");
