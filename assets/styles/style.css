@@ -9,7 +9,14 @@ html {
 }
 
 :root {
-  --primary-bg-color: #1b7b8914
+  --primary-bg-color: #1b7b8914;
+  --ink: #1c2528;
+  --muted-ink: #647276;
+  --line: rgba(28, 37, 40, 0.14);
+  --paper: #f7f8f6;
+  --accent: #b02a2a;
+  --teal: #287b80;
+  --content-width: 1180px;
 }
 
 /* Visually hidden but accessible to screen readers */
@@ -84,9 +91,10 @@ menu-wrapper ul li {
   align-items: center;
   font-size: 1.5rem;
   padding: 0 4rem;
-  background-color: #1e454921;
-  backdrop-filter: blur(5px);
-  color: #8c3939;
+  background-color: rgba(247, 248, 246, 0.82);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--line);
+  color: var(--ink);
 }
 
 .header_left {
@@ -156,7 +164,9 @@ menu-wrapper ul li {
 }
 
 .content-bg {
-  background: repeating-linear-gradient(288deg, #1b7b8914, #8b8b8b 1px, #fff0 0.2rem, #fff0 0.7rem);
+  background:
+    radial-gradient(circle at 75% 30%, rgba(176, 42, 42, 0.13), transparent 22rem),
+    repeating-linear-gradient(288deg, #1b7b8914, #8b8b8b 1px, #fff0 0.2rem, #fff0 0.7rem);
   --mask: linear-gradient(0deg,#000 0%,rgba(0,0,0,.3) 60%,transparent);
   -webkit-mask-image: var(--mask);
   height: 100%;
@@ -167,24 +177,40 @@ menu-wrapper ul li {
 .content {
   flex-direction: column;
   align-items: center;
-  padding-top: 3rem;
-  max-width: 80%;
+  padding: 10rem 2rem 0;
+  max-width: 92rem;
   text-align: center;
   margin: 0 auto;
 }
 
 .content h1 {
-  font-size: 4rem;
-  color: #5b5b5b;
+  max-width: 90rem;
+  font-size: clamp(4rem, 7vw, 8.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.07em;
+  color: var(--ink);
 }
 
 .content p {
-  width: 40rem;
+  width: min(62rem, 100%);
   font-size: 2rem;
   text-align: center;
-  color: #7f7f7f;
-  padding-top: 2rem;
-  line-height: 3rem;
+  color: var(--muted-ink);
+  padding-top: 2.5rem;
+  line-height: 1.65;
+}
+
+.content .eyebrow,
+.section-kicker {
+  width: auto;
+  padding-top: 0;
+  margin-bottom: 2rem;
+  color: var(--accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .svg {
@@ -198,9 +224,9 @@ menu-wrapper ul li {
 
 /* Divisor */
 .divisor {
-  height: 1rem;
+  height: 1px;
   margin: 0 auto;
-  background-color: #1e454921;
+  background-color: var(--line);
 }
 
 /* Content 2 */
@@ -446,7 +472,7 @@ menu-wrapper ul li {
   }
 
   .content p {
-    width: 50%;
+    width: 90%;
     font-size: 1.7rem;
     padding-top: 2rem;
     line-height: 2rem;
