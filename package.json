@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "live-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "esbuild src/main.js assets/styles/main.css --bundle --minify --format=iife --target=es2018 --outdir=dist",
     "watch": "esbuild src/main.js assets/styles/main.css --bundle --format=iife --target=es2018 --outdir=dist --watch"
@@ -20,6 +21,7 @@
   },
   "homepage": "https://github.com/er-contreras/axis_of_change#readme",
   "devDependencies": {
-    "esbuild": "^0.27.1"
+    "esbuild": "^0.27.1",
+    "live-server": "^1.2.2"
   }
 }
