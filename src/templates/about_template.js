@@ -2,21 +2,22 @@ var about_template = document.createElement("template");
 about_template.innerHTML = `
   <div class="about-wrapper">
     <div id="about" class="about-section">
-      <h2>Engineering for Every Stage of Growth</h2>
+      <p class="section-kicker">The Axis of Change approach</p>
+      <h2>Designed Around the Problem</h2>
       <div class="about-description">
         <p>
-          Axis of Change helps small, medium, and large companies turn technical
-          challenges into dependable digital products. From a focused MVP or internal
-          workflow to a mature platform requiring modernization, architecture guidance,
-          or additional delivery capacity, each engagement is shaped around the problem
-          and the outcome.
+          Axis of Change helps small, medium, and large organizations turn complex
+          challenges into dependable digital products and operations. From a focused
+          new initiative to a mature platform requiring modernization, architecture
+          guidance, or additional delivery capacity, every engagement begins with the
+          problem that matters most.
         </p>
         <br>
         <p>
-          A language-agnostic approach keeps technology aligned with the business need.
-          Experience across Ruby on Rails, JavaScript, React, PostgreSQL, authentication,
-          payments, testing, Docker, and Linux supports practical recommendations without
-          forcing every organization into the same stack.
+          Strong outcomes come from the right questions: understanding constraints,
+          mapping dependencies, reducing unnecessary complexity, and creating systems
+          people can operate with confidence. The result is a thoughtful balance of
+          usability, maintainability, performance, and long-term adaptability.
         </p>
       </div>
     </div>

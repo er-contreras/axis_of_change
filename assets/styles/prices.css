@@ -1,16 +1,19 @@
 .prices-section {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: min(var(--content-width), 90%);
+  margin: 0 auto;
+  padding: 5rem 0 12rem;
 }
 
 .prices-h2 {
   margin: 0 auto;
-  width: 90%;
+  width: min(var(--content-width), 90%);
   text-align: center;
   font-size: 5rem;
-  padding: 10rem 0 1rem 0;
-  color: #494949;
+  padding: 12rem 0 1rem;
+  color: var(--ink);
 }
 
 .prices-h2 h2 {
@@ -18,41 +21,71 @@
 }
 
 .prices-h2 p {
-  font-size: 3rem; 
+  max-width: 70rem;
+  margin: 1rem auto 0;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--muted-ink);
 }
 
 .price-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
-  padding: 2rem;
-  min-width: 27rem;
-  max-width: 5rem;
-  min-height: 30rem;
-  border-radius: 4%;
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--card-accent);
+  padding: 3rem;
+  min-height: 43rem;
+  border-radius: 1.6rem;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0 1.5rem 4rem rgba(28, 37, 40, 0.06);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.price-container:hover {
+  transform: translateY(-0.6rem);
+  box-shadow: 0 2rem 5rem rgba(28, 37, 40, 0.12);
+}
+
+.price-amber { --card-accent: #a17d00; }
+.price-coral { --card-accent: #cd5050; }
+.price-teal { --card-accent: #2d868b; }
+
+.price-index {
+  display: block;
+  margin-bottom: 5rem;
+  color: var(--card-accent);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
 }
 
 .price-header {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  display: block;
 }
 
 .price-container h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
+  line-height: 1.05;
   padding-bottom: 1rem;
 }
 
 .price-container p {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  color: var(--muted-ink);
 }
 
 .contract-btn {
   font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 1rem;
+  background: var(--card-accent);
+  transition: filter 180ms ease;
+}
+
+.contract-btn:hover {
+  filter: brightness(0.9);
 }
 
 .anchor-btn {
@@ -67,7 +100,8 @@
 .price-description li {
   list-style: none;
   font-size: 1.5rem;
-  padding: 0.2rem 0;
+  line-height: 1.45;
+  padding: 0.55rem 0;
 }
 
 .price-description svg {
@@ -90,6 +124,7 @@
   .prices-section {
     flex-direction: column;
     align-items: center;
+    grid-template-columns: 1fr;
   }
 
   .price-container {

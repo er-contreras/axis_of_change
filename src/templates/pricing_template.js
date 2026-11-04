@@ -1,44 +1,44 @@
 let PRICING_DATA = [
   {
-    title: "Rails API Development",
-    price: "Fixed Rate",
-    color: "#665400",
+    title: "Discover",
+    price: "Understand the opportunity",
+    color: "amber",
     features: [
-      "CRUD endpoints and JSON serialization",
-      "JWT and OIDC authentication",
-      "PostgreSQL schema and query design",
-      "Swagger API documentation",
-      "RSpec coverage for new features"
+      "Clarify goals, constraints, and priorities",
+      "Map the current experience and its friction",
+      "Identify risks, dependencies, and opportunities",
+      "Create a practical direction for the next step",
+      "Deliver a concise, actionable assessment"
     ],
-    cta: "Discuss a Project",
+    cta: "Start a Conversation",
     link: "index.html#contact"
   },
   {
-    title: "Product Features",
-    price: "Project-Based",
-    color: "#cd5050",
+    title: "Design",
+    price: "Shape the right solution",
+    color: "coral",
     features: [
-      "JavaScript and React interfaces",
-      "Hotwire, Turbo, and Stimulus",
-      "Stripe payment flows",
-      "Checkout and workflow improvements",
-      "Minitest or RSpec-backed delivery"
+      "Translate needs into clear product structure",
+      "Design intuitive journeys and interactions",
+      "Define a resilient system architecture",
+      "Balance speed, quality, and future change",
+      "Align stakeholders around a shared blueprint"
     ],
-    cta: "Plan a Feature",
+    cta: "Shape a Solution",
     link: "index.html#contact"
   },
   {
-    title: "Modernization & Deployment",
-    price: "Retainer",
-    color: "#2d868b",
+    title: "Deliver",
+    price: "Turn direction into momentum",
+    color: "teal",
     features: [
-      "Legacy Rails upgrades",
-      "Docker and Docker Compose setup",
-      "Deployments to Linux and managed services",
-      "Dokku, Nginx, and HTTPS configuration",
-      "GitHub Actions and repeatable releases"
+      "Build and refine high-value capabilities",
+      "Modernize systems without disrupting operations",
+      "Improve reliability, visibility, and performance",
+      "Create repeatable ways of working",
+      "Leave teams with a stronger foundation"
     ],
-    cta: "Improve an Existing App",
+    cta: "Move Forward",
     link: "index.html#contact"
   }
 ];
@@ -61,7 +61,7 @@ class PricingWrapper extends HTMLElement {
     return `
       <div id="prices" class="prices-h2">
         <h2>Ways to Work Together</h2>
-        <p>Focused engineering support for new features, product improvements, and Rails applications that need a careful next step.</p>
+        <p>From first principles to continuous improvement, focused support for organizations creating better digital experiences and stronger operations.</p>
       </div>
 
         <div class="prices-container">
@@ -74,10 +74,11 @@ class PricingWrapper extends HTMLElement {
 
   renderPlan(plan) {
     return `
-        <div class="price-container">
+        <article class="price-container price-${plan.color}">
           <div>
             <div class="price-header">
-              <h2 style="color: ${plan.color};">${plan.title}</h2>
+              <span class="price-index">${String(PRICING_DATA.indexOf(plan) + 1).padStart(2, "0")}</span>
+              <h2>${plan.title}</h2>
               <p>${plan.price}</p>
             </div>
 
@@ -89,9 +90,9 @@ class PricingWrapper extends HTMLElement {
           </div>
 
           <a class="anchor-btn" href="${plan.link}">
-            <div class="contract-btn" style="background-color: ${plan.color};">
+            <div class="contract-btn">
               ${plan.cta}
-            </div>
+            </article>
           </a>
         </div>
     `;

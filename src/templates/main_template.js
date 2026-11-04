@@ -4,8 +4,9 @@ main_template.innerHTML = `
     <div class="content-bg"></div>
 
     <section class="content">
-      <h1 class="hero-title">Engineering Solutions That Move Businesses Forward</h1>
-      <p>Language-agnostic software engineering for companies that need reliable products, stronger systems, and a clear path from technical challenge to business outcome.</p>
+      <p class="eyebrow">Digital strategy · Product architecture · Systems thinking</p>
+      <h1 class="hero-title">Clarity for Complex Digital Challenges</h1>
+      <p>Axis of Change helps organizations transform ambiguity into purposeful design, resilient architecture, and practical solutions that create momentum.</p>
     </section>
 
     <div class="svg">

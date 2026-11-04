@@ -12,7 +12,7 @@ footer_template.innerHTML = /* html */`
         </div>
 
         <div class="content-2-lines last-child">
-          <h2>Why organizations choose AC</h2>
+          <h2>Why organizations choose Axis of Change</h2>
           <ul class="reasons-list"></ul>
         </div>
 
@@ -36,7 +36,7 @@ footer_template.innerHTML = /* html */`
 
       <p>
         &copy; <span class="year"></span>
-        Axis of Change | Full-Stack Ruby & JavaScript Development | All Rights Reserved
+        Axis of Change | Strategic Digital Engineering | All Rights Reserved
       </p>
     </div>
   </footer>
@@ -57,18 +57,18 @@ class FooterWrapper extends HTMLElement {
 
   renderLists() {
     const services = [
-      "Ruby on Rails APIs",
-      "JavaScript & React Features",
-      "PostgreSQL Design",
-      "Stripe Integrations",
-      "Deployment & Modernization"
+      "Product architecture",
+      "Digital experience design",
+      "Systems modernization",
+      "Workflow optimization",
+      "Deployment & operational readiness"
     ];
     const reasons = [
       "Business-focused problem solving",
-      "Language-agnostic recommendations",
-      "Test-backed engineering",
-      "Reliable integrations and workflows",
-      "Support from MVP to modernization"
+      "Clear architectural thinking",
+      "Intentional product design",
+      "Reliable systems and workflows",
+      "Support from vision to modernization"
     ];
     this.fillList(".services-list", services);
     this.fillList(".reasons-list", reasons);
