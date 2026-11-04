@@ -1,44 +1,44 @@
 let PRICING_DATA = [
   {
-    title: "System Performance Audit",
+    title: "Rails API Development",
     price: "Fixed Rate",
     color: "#665400",
     features: [
-      "Latency & Bottleneck Analysis",
-      "Resource Consumption Profiling",
-      "Infrastructure Security Review",
-      "Scalability Roadmapping",
-      "Comprehensive Optimization Report"
+      "CRUD endpoints and JSON serialization",
+      "JWT and OIDC authentication",
+      "PostgreSQL schema and query design",
+      "Swagger API documentation",
+      "RSpec coverage for new features"
     ],
-    cta: "Schedule Audit",
+    cta: "Discuss a Project",
     link: "index.html#contact"
   },
   {
-    title: "High-Performance Engineering",
+    title: "Product Features",
     price: "Project-Based",
     color: "#cd5050",
     features: [
-      "Custom Backend Architecture",
-      "Database Design & Optimization",
-      "Low-Latency Execution Logic",
-      "Language-Agnostic Core Services",
-      "Reliability"
+      "JavaScript and React interfaces",
+      "Hotwire, Turbo, and Stimulus",
+      "Stripe payment flows",
+      "Checkout and workflow improvements",
+      "Minitest or RSpec-backed delivery"
     ],
-    cta: "Book Consultation",
+    cta: "Plan a Feature",
     link: "index.html#contact"
   },
   {
-    title: "Infrastructure & Deployment",
+    title: "Modernization & Deployment",
     price: "Retainer",
     color: "#2d868b",
     features: [
-      "CI/CD Pipeline Automation",
-      "Containerization Strategy",
-      "Automated Health Monitoring",
-      "Zero-Downtime Deployment",
-      "Security & Uptime Maintenance"
+      "Legacy Rails upgrades",
+      "Docker and Docker Compose setup",
+      "Deployments to Linux and managed services",
+      "Dokku, Nginx, and HTTPS configuration",
+      "GitHub Actions and repeatable releases"
     ],
-    cta: "Inquire Now",
+    cta: "Improve an Existing App",
     link: "index.html#contact"
   }
 ];
@@ -60,8 +60,8 @@ class PricingWrapper extends HTMLElement {
   renderPrices() {
     return `
       <div id="prices" class="prices-h2">
-        <h2>Pricing</h2>
-        <p>Choose the project that best suits your needs.</p>
+        <h2>Ways to Work Together</h2>
+        <p>Focused engineering support for new features, product improvements, and Rails applications that need a careful next step.</p>
       </div>
 
         <div class="prices-container">
@@ -108,4 +108,3 @@ class PricingWrapper extends HTMLElement {
 }
 
 customElements.define("pricing-wrapper", PricingWrapper);
-

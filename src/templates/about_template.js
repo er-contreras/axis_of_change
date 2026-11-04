@@ -2,22 +2,21 @@ var about_template = document.createElement("template");
 about_template.innerHTML = `
   <div class="about-wrapper">
     <div id="about" class="about-section">
-      <h2>Technical Philosophy</h2>
+      <h2>Engineering for Every Stage of Growth</h2>
       <div class="about-description">
         <p>
-          Axis of Change is an engineering practice dedicated to 
-          <strong>System Resilience and Performance</strong>. We don’t just write code; 
-          we engineer high-performance backends and robust infrastructure 
-          designed to survive high-traffic, mission-critical environments.
+          Axis of Change helps small, medium, and large companies turn technical
+          challenges into dependable digital products. From a focused MVP or internal
+          workflow to a mature platform requiring modernization, architecture guidance,
+          or additional delivery capacity, each engagement is shaped around the problem
+          and the outcome.
         </p>
         <br>
         <p>
-          By maintaining a <strong>language-agnostic</strong> approach, we prioritize 
-          the best tool for the objective whether that involves high-level 
-          application logic or low-level system optimization. Our focus is on 
-          eliminating technical debt, automating deployment pipelines, and 
-          ensuring that every system we touch is faster, more secure, and 
-          infinitely more reliable.
+          A language-agnostic approach keeps technology aligned with the business need.
+          Experience across Ruby on Rails, JavaScript, React, PostgreSQL, authentication,
+          payments, testing, Docker, and Linux supports practical recommendations without
+          forcing every organization into the same stack.
         </p>
       </div>
     </div>
