@@ -187,7 +187,7 @@
 
   .price-container {
     justify-content: unset;
-    padding-top: 3rem;
+    padding: 3rem 1.5rem;
     min-height: unset;
     margin-bottom: 3rem;
   }
@@ -201,7 +201,6 @@
   }
 
   .prices-section {
-    padding: 2rem;
   }
 
   .price-description {
@@ -210,6 +209,7 @@
 
   .price-container li {
     font-size: 2.5rem;
+    line-height: 1;
   }
 
   .contract-btn {

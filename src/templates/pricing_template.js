@@ -75,26 +75,24 @@ class PricingWrapper extends HTMLElement {
   renderPlan(plan) {
     return `
         <article class="price-container price-${plan.color}">
-          <div>
-            <div class="price-header">
-              <span class="price-index">${String(PRICING_DATA.indexOf(plan) + 1).padStart(2, "0")}</span>
-              <h2>${plan.title}</h2>
-              <p>${plan.price}</p>
-            </div>
+          <div class="price-header">
+            <span class="price-index">${String(PRICING_DATA.indexOf(plan) + 1).padStart(2, "0")}</span>
+            <h2>${plan.title}</h2>
+            <p>${plan.price}</p>
+          </div>
 
-            <div class="price-description">
-              <ul>
-                ${plan.features.map(f => this.renderFeature(f)).join("")}
-              </ul>
-            </div>
+          <div class="price-description">
+            <ul>
+              ${plan.features.map(f => this.renderFeature(f)).join("")}
+            </ul>
           </div>
 
           <a class="anchor-btn" href="${plan.link}">
             <div class="contract-btn">
               ${plan.cta}
-            </article>
+            </div>
           </a>
-        </div>
+      </article>
     `;
   }
 
