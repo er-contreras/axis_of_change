@@ -10,7 +10,7 @@ header_template.innerHTML = /* html */`
           <div>
             <ul class="navigation-menu">
               <a href="index.html#"><li>Home</li></a>
-              <a href="index.html#prices"><li>Pricing</li></a>
+              <a href="index.html#prices"><li>Services</li></a>
               <a href="index.html#about"><li>About</li></a>
             </ul>
           </div>

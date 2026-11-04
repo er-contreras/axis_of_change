@@ -9,7 +9,7 @@ menu_template.innerHTML = /* InnerHTML */`
     <div class="popup-menu-options">
       <ul>
         <a class="link" href="index.html#"><li>Home</li></a>
-        <a class="link" href="index.html#prices"><li>Pricing</li></a>
+        <a class="link" href="index.html#prices"><li>Services</li></a>
         <a class="link" href="index.html#about"><li>About</li></a>
         <a class="link" href="index.html#contact"><li style="color: #c5650f";>Contact</li></a>
         <a href="https://calendly.com/er-contreras"><li style="color: #198755";>Free Consultation</li></a>

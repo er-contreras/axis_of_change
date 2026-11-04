@@ -3,7 +3,7 @@ contact_template.innerHTML = `
   <form class="contact-form" novalidate>
     <h2>Get in touch</h2>
     <p class="form-subtitle">
-      Tell me about your project, and I’ll get back to you within 24 hours.
+      Share the challenge, opportunity, or system that needs attention, and a response will follow within 24 hours.
     </p>
 
     <div class="form-group">
@@ -68,7 +68,7 @@ class ContactWrapper extends HTMLElement {
       if (!response.ok) throw new Error("Submission failed");
 
       this.form.reset();
-      this.showStatus("Message sent successfully. I will contact you shortly.", "success");
+      this.showStatus("Message sent successfully. Axis of Change will be in touch shortly.", "success");
     } catch (err) {
       this.showStatus("Something went wrong. Please try again later.", "error");
     } finally {
@@ -92,4 +92,3 @@ class ContactWrapper extends HTMLElement {
 }
 
 customElements.define("contact-wrapper", ContactWrapper);
-

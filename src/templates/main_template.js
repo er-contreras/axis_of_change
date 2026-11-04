@@ -4,8 +4,8 @@ main_template.innerHTML = `
     <div class="content-bg"></div>
 
     <section class="content">
-      <h1 class="hero-title">High-Performance Systems</h1>
-      <p>We build resilient systems that bridge the gap between hardware and the cloud.</p>
+      <h1 class="hero-title">Engineering Solutions That Move Businesses Forward</h1>
+      <p>Language-agnostic software engineering for companies that need reliable products, stronger systems, and a clear path from technical challenge to business outcome.</p>
     </section>
 
     <div class="svg">
